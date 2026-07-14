@@ -1,0 +1,3250 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8d987bb147a745c3e3f09b5b7bc32225 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8d987bb147a745c3e3f09b5b7bc32225" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8d987bb147a745c3e3f09b5b7bc32225 = L.map(
+                "map_8d987bb147a745c3e3f09b5b7bc32225",
+                {
+                    center: [23.3441, 85.3096],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_da2b3b3d7ff06b55503a5243210b1de9 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_da2b3b3d7ff06b55503a5243210b1de9.addTo(map_8d987bb147a745c3e3f09b5b7bc32225);
+        
+    
+            var marker_190d6ef22abc90ef8d8e55d3f9d53049 = L.marker(
+                [23.3441, 85.3096],
+                {}
+            ).addTo(map_8d987bb147a745c3e3f09b5b7bc32225);
+        
+    
+            var icon_fc865a6fd42b2007f7c1a252adbd6939 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "crosshairs", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_190d6ef22abc90ef8d8e55d3f9d53049.setIcon(icon_fc865a6fd42b2007f7c1a252adbd6939);
+        
+    
+        var popup_04fbf77665378ca04da15f83c72fbdea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a642555b6f95f760eab97ea110a350f3 = $(`<div id="html_a642555b6f95f760eab97ea110a350f3" style="width: 100.0%; height: 100.0%;">Search Center (Ranchi Main City)</div>`)[0];
+                popup_04fbf77665378ca04da15f83c72fbdea.setContent(html_a642555b6f95f760eab97ea110a350f3);
+            
+        
+
+        marker_190d6ef22abc90ef8d8e55d3f9d53049.bindPopup(popup_04fbf77665378ca04da15f83c72fbdea)
+        ;
+
+        
+    
+    
+            var marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_5e3e3e63339495b543c912f03ef3f4af = L.marker(
+                [23.3657353, 85.3112754],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_2035a95742efe72fb0c6a8e24275503d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_5e3e3e63339495b543c912f03ef3f4af.setIcon(icon_2035a95742efe72fb0c6a8e24275503d);
+        
+    
+        var popup_fe2ccfbe722244d19bd28db89933839f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_50f988e31fc8f521d5aae42a65c0d710 = $(`<div id="html_50f988e31fc8f521d5aae42a65c0d710" style="width: 100.0%; height: 100.0%;"><b>Bharat Petroleum Petrol Pump</b><br>Petrol Pump<br>9886+7GV, Bypass Road, near Hanuman Mandir Marg, Nizam Nagar, Harmu, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJfZCq1f3g9DkRszI62Jrz-WU</div>`)[0];
+                popup_fe2ccfbe722244d19bd28db89933839f.setContent(html_50f988e31fc8f521d5aae42a65c0d710);
+            
+        
+
+        marker_5e3e3e63339495b543c912f03ef3f4af.bindPopup(popup_fe2ccfbe722244d19bd28db89933839f)
+        ;
+
+        
+    
+    
+            marker_5e3e3e63339495b543c912f03ef3f4af.bindTooltip(
+                `<div>
+                     Bharat Petroleum Petrol Pump
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a610768634fdeeff97fba0ada508971c = L.marker(
+                [23.3797535, 85.310816],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_9c9ba524a5c1ebdd8a3d7916b389d773 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a610768634fdeeff97fba0ada508971c.setIcon(icon_9c9ba524a5c1ebdd8a3d7916b389d773);
+        
+    
+        var popup_52060dd7abe08abe0f27540d0d1e1524 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e93677a485f85fea4a3b997b5916a928 = $(`<div id="html_e93677a485f85fea4a3b997b5916a928" style="width: 100.0%; height: 100.0%;"><b>Shree Gopal Automobiles</b><br>Petrol Pump<br>Jayaswal Petrol Pump, Ratu Rd, Aryapuri, Indrapuri Colony, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJrxZUTTDh9DkRU2WD9vXY5PM</div>`)[0];
+                popup_52060dd7abe08abe0f27540d0d1e1524.setContent(html_e93677a485f85fea4a3b997b5916a928);
+            
+        
+
+        marker_a610768634fdeeff97fba0ada508971c.bindPopup(popup_52060dd7abe08abe0f27540d0d1e1524)
+        ;
+
+        
+    
+    
+            marker_a610768634fdeeff97fba0ada508971c.bindTooltip(
+                `<div>
+                     Shree Gopal Automobiles
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b7782ea8aeaab59c572c225670d90e51 = L.marker(
+                [23.4008635, 85.3661571],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_712dd6c98077faa83f8a575d29a492c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b7782ea8aeaab59c572c225670d90e51.setIcon(icon_712dd6c98077faa83f8a575d29a492c9);
+        
+    
+        var popup_0317eaf268646189f8f43f5ef536dccb = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c24c4b4972cb6870bad5a9d76807fcb5 = $(`<div id="html_c24c4b4972cb6870bad5a9d76807fcb5" style="width: 100.0%; height: 100.0%;"><b>Hindustan Petroleum Corporation Limited</b><br>Petrol Pump<br>Ground Floor, Bargain Rd, near Ranchi Medical College, Muharram Toli, Bariatu, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJVfmXj_Dj9DkRMKk2xO1NIV4</div>`)[0];
+                popup_0317eaf268646189f8f43f5ef536dccb.setContent(html_c24c4b4972cb6870bad5a9d76807fcb5);
+            
+        
+
+        marker_b7782ea8aeaab59c572c225670d90e51.bindPopup(popup_0317eaf268646189f8f43f5ef536dccb)
+        ;
+
+        
+    
+    
+            marker_b7782ea8aeaab59c572c225670d90e51.bindTooltip(
+                `<div>
+                     Hindustan Petroleum Corporation Limited
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ec6ed6ed04b4f8cc6414a60e5deacb1a = L.marker(
+                [23.3045, 85.288538],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_adaad06f906367747a3b5645cc0ea72d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ec6ed6ed04b4f8cc6414a60e5deacb1a.setIcon(icon_adaad06f906367747a3b5645cc0ea72d);
+        
+    
+        var popup_18ba2170d317a30ef15f31852951ad08 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cf35b63f12fe1a93bb27b3f490128b5e = $(`<div id="html_cf35b63f12fe1a93bb27b3f490128b5e" style="width: 100.0%; height: 100.0%;"><b>HP Petrol Pump</b><br>Petrol Pump<br>CTI Colony, Sector 4, Birsa Nagar, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJj8EPveYf9TkRptgtkx3RIzA</div>`)[0];
+                popup_18ba2170d317a30ef15f31852951ad08.setContent(html_cf35b63f12fe1a93bb27b3f490128b5e);
+            
+        
+
+        marker_ec6ed6ed04b4f8cc6414a60e5deacb1a.bindPopup(popup_18ba2170d317a30ef15f31852951ad08)
+        ;
+
+        
+    
+    
+            marker_ec6ed6ed04b4f8cc6414a60e5deacb1a.bindTooltip(
+                `<div>
+                     HP Petrol Pump
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_421e9eb0e21440b810a5c63fae58ada7 = L.marker(
+                [23.3331048, 85.30251],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_8d7bfd542894a7a50b94482c0db86a56 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_421e9eb0e21440b810a5c63fae58ada7.setIcon(icon_8d7bfd542894a7a50b94482c0db86a56);
+        
+    
+        var popup_b40b82d4246c1c17cc7ab8eb71105ac2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b86796a28875635dd5342a25ec6e89c5 = $(`<div id="html_b86796a28875635dd5342a25ec6e89c5" style="width: 100.0%; height: 100.0%;"><b>IndianOil</b><br>Petrol Pump<br>Ground Floor, near Satellite Colony, Hec Gate 2, Balalong, Daud Nagar, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJeYmuNDjg9DkRwVutAwki8IA</div>`)[0];
+                popup_b40b82d4246c1c17cc7ab8eb71105ac2.setContent(html_b86796a28875635dd5342a25ec6e89c5);
+            
+        
+
+        marker_421e9eb0e21440b810a5c63fae58ada7.bindPopup(popup_b40b82d4246c1c17cc7ab8eb71105ac2)
+        ;
+
+        
+    
+    
+            marker_421e9eb0e21440b810a5c63fae58ada7.bindTooltip(
+                `<div>
+                     IndianOil
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_56d8a3633a268519a18ac15e89a1ed37 = L.marker(
+                [23.4027672, 85.3923607],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_1bb3f2ac2caf64f8d8a87b3cdcfe7522 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_56d8a3633a268519a18ac15e89a1ed37.setIcon(icon_1bb3f2ac2caf64f8d8a87b3cdcfe7522);
+        
+    
+        var popup_11acc5e15df5a6eb2cb89ae989c5d253 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b4c4c769218a2e568adde6ad7e43e6c4 = $(`<div id="html_b4c4c769218a2e568adde6ad7e43e6c4" style="width: 100.0%; height: 100.0%;"><b>Hindustan Petroleum Corporation Limited</b><br>Petrol Pump<br>Ground Floor, NH 33, Booty, Ohdar Village, Dumardaga, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJu25-6oPj9DkRqSyB152lFg8</div>`)[0];
+                popup_11acc5e15df5a6eb2cb89ae989c5d253.setContent(html_b4c4c769218a2e568adde6ad7e43e6c4);
+            
+        
+
+        marker_56d8a3633a268519a18ac15e89a1ed37.bindPopup(popup_11acc5e15df5a6eb2cb89ae989c5d253)
+        ;
+
+        
+    
+    
+            marker_56d8a3633a268519a18ac15e89a1ed37.bindTooltip(
+                `<div>
+                     Hindustan Petroleum Corporation Limited
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_391f6855687e39be4502b5f4b4154245 = L.marker(
+                [23.371382, 85.331711],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_fd58e648c373fc81ed1829f85ebc12e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_391f6855687e39be4502b5f4b4154245.setIcon(icon_fd58e648c373fc81ed1829f85ebc12e8);
+        
+    
+        var popup_95bb2c242d164c81655feca234482b34 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_fcf3a4d4b936b5b4f734b13023ed0829 = $(`<div id="html_fcf3a4d4b936b5b4f734b13023ed0829" style="width: 100.0%; height: 100.0%;"><b>IndianOil</b><br>Petrol Pump<br>Ground Floor, Old, Hazaribagh Rd, Lalpur, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJlbUIcQ3h9DkRy9-K0AXuEPA</div>`)[0];
+                popup_95bb2c242d164c81655feca234482b34.setContent(html_fcf3a4d4b936b5b4f734b13023ed0829);
+            
+        
+
+        marker_391f6855687e39be4502b5f4b4154245.bindPopup(popup_95bb2c242d164c81655feca234482b34)
+        ;
+
+        
+    
+    
+            marker_391f6855687e39be4502b5f4b4154245.bindTooltip(
+                `<div>
+                     IndianOil
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4e81c15a9465292352d01d111c6336c3 = L.marker(
+                [23.363834, 85.347336],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_9d856b21b01914a2b7f842d7437a50b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4e81c15a9465292352d01d111c6336c3.setIcon(icon_9d856b21b01914a2b7f842d7437a50b7);
+        
+    
+        var popup_8fb14820a06cfb70cdd9f63dc0e7c72e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e45355faac5ff98fe9264a01183bc365 = $(`<div id="html_e45355faac5ff98fe9264a01183bc365" style="width: 100.0%; height: 100.0%;"><b>IndianOil</b><br>Petrol Pump<br>Chowk, Purulia Rd, near Ymca, Kantatoli, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJX3yi_3jh9DkRbvWtGv5VYx4</div>`)[0];
+                popup_8fb14820a06cfb70cdd9f63dc0e7c72e.setContent(html_e45355faac5ff98fe9264a01183bc365);
+            
+        
+
+        marker_4e81c15a9465292352d01d111c6336c3.bindPopup(popup_8fb14820a06cfb70cdd9f63dc0e7c72e)
+        ;
+
+        
+    
+    
+            marker_4e81c15a9465292352d01d111c6336c3.bindTooltip(
+                `<div>
+                     IndianOil
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fc74b3df660a2dbc9b1b9828e0ce8766 = L.marker(
+                [23.3797605, 85.3095479],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_92d04b5708ed0efc3f90b4448f141035 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_fc74b3df660a2dbc9b1b9828e0ce8766.setIcon(icon_92d04b5708ed0efc3f90b4448f141035);
+        
+    
+        var popup_e3d421a6b416352b950c76f4e122ead3 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_175b4029c6530d0326ec2949686b249f = $(`<div id="html_175b4029c6530d0326ec2949686b249f" style="width: 100.0%; height: 100.0%;"><b>IndianOil</b><br>Petrol Pump<br>Ground Floor, Ratu Rd, Church Road, Indrapuri Colony, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJVzMykHXh9DkRT161CH3mZX8</div>`)[0];
+                popup_e3d421a6b416352b950c76f4e122ead3.setContent(html_175b4029c6530d0326ec2949686b249f);
+            
+        
+
+        marker_fc74b3df660a2dbc9b1b9828e0ce8766.bindPopup(popup_e3d421a6b416352b950c76f4e122ead3)
+        ;
+
+        
+    
+    
+            marker_fc74b3df660a2dbc9b1b9828e0ce8766.bindTooltip(
+                `<div>
+                     IndianOil
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0b76e7dac888c6bfa527d5d67b06eee3 = L.marker(
+                [23.3223985, 85.3056036],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_d16c53b1831b62fbfbb6dbfe588e457c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0b76e7dac888c6bfa527d5d67b06eee3.setIcon(icon_d16c53b1831b62fbfbb6dbfe588e457c);
+        
+    
+        var popup_bcff2ac90658a78e541e90a7a2bf41c9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_12392687516685dfbaecd7620902218b = $(`<div id="html_12392687516685dfbaecd7620902218b" style="width: 100.0%; height: 100.0%;"><b>IndianOil</b><br>Petrol Pump<br>HEC Gate, Dhurwa, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJ7wb5sy_g9DkRateoX3m8jws</div>`)[0];
+                popup_bcff2ac90658a78e541e90a7a2bf41c9.setContent(html_12392687516685dfbaecd7620902218b);
+            
+        
+
+        marker_0b76e7dac888c6bfa527d5d67b06eee3.bindPopup(popup_bcff2ac90658a78e541e90a7a2bf41c9)
+        ;
+
+        
+    
+    
+            marker_0b76e7dac888c6bfa527d5d67b06eee3.bindTooltip(
+                `<div>
+                     IndianOil
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c386ffee65880bb6c1031aac0facd400 = L.marker(
+                [23.4139989, 85.3164635],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_72a0dc5671fb9460eb31eef83629a7df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c386ffee65880bb6c1031aac0facd400.setIcon(icon_72a0dc5671fb9460eb31eef83629a7df);
+        
+    
+        var popup_e3fb6a38fab430791e241597b9c7a294 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4b1475bd6296ce7e994dce930a840f81 = $(`<div id="html_4b1475bd6296ce7e994dce930a840f81" style="width: 100.0%; height: 100.0%;"><b>IndianOil</b><br>Petrol Pump<br>C878+GFV, Patratu, Kanke Rd, behind Reliance Smart, Jhirga Toli, Gandhi Nagar, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJb6_7UFvn9DkROpphMa6VR5I</div>`)[0];
+                popup_e3fb6a38fab430791e241597b9c7a294.setContent(html_4b1475bd6296ce7e994dce930a840f81);
+            
+        
+
+        marker_c386ffee65880bb6c1031aac0facd400.bindPopup(popup_e3fb6a38fab430791e241597b9c7a294)
+        ;
+
+        
+    
+    
+            marker_c386ffee65880bb6c1031aac0facd400.bindTooltip(
+                `<div>
+                     IndianOil
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_65971ad81f85716de18632378189645f = L.marker(
+                [23.343884, 85.324441],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_9e98062bae56c0aa4d93585c8ce65473 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_65971ad81f85716de18632378189645f.setIcon(icon_9e98062bae56c0aa4d93585c8ce65473);
+        
+    
+        var popup_d4928e1a6ec74bd0dd5a9f4bfb4db5ea = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4a821d9ee841a4d1d1cb3540536f1920 = $(`<div id="html_4a821d9ee841a4d1d1cb3540536f1920" style="width: 100.0%; height: 100.0%;"><b>IndianOil</b><br>Petrol Pump<br>Ground Floor, Forest Officers' Colony, Doranda, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJAVS1Dbrh9DkR16w0IXHSj_E</div>`)[0];
+                popup_d4928e1a6ec74bd0dd5a9f4bfb4db5ea.setContent(html_4a821d9ee841a4d1d1cb3540536f1920);
+            
+        
+
+        marker_65971ad81f85716de18632378189645f.bindPopup(popup_d4928e1a6ec74bd0dd5a9f4bfb4db5ea)
+        ;
+
+        
+    
+    
+            marker_65971ad81f85716de18632378189645f.bindTooltip(
+                `<div>
+                     IndianOil
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3a69851f4aace1d97ad05449f658efd5 = L.marker(
+                [23.3744626, 85.31441149999999],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_e95f1082e36c90ed0834d24e6647f254 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3a69851f4aace1d97ad05449f658efd5.setIcon(icon_e95f1082e36c90ed0834d24e6647f254);
+        
+    
+        var popup_7b1ce62b4b8e3c1d88ebb033c740157a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1107066cf36c498de61ab2349dbbc5c2 = $(`<div id="html_1107066cf36c498de61ab2349dbbc5c2" style="width: 100.0%; height: 100.0%;"><b>IndianOil</b><br>Petrol Pump<br>Garikhana, Harmu Rd, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJdYpSdx3h9DkRAZnWEtk7pK4</div>`)[0];
+                popup_7b1ce62b4b8e3c1d88ebb033c740157a.setContent(html_1107066cf36c498de61ab2349dbbc5c2);
+            
+        
+
+        marker_3a69851f4aace1d97ad05449f658efd5.bindPopup(popup_7b1ce62b4b8e3c1d88ebb033c740157a)
+        ;
+
+        
+    
+    
+            marker_3a69851f4aace1d97ad05449f658efd5.bindTooltip(
+                `<div>
+                     IndianOil
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_97a65193b5e2b47d84fa9def7c70a39c = L.marker(
+                [23.3622936, 85.2297282],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_e24be2c074d13ca66618fa1930a0fa32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_97a65193b5e2b47d84fa9def7c70a39c.setIcon(icon_e24be2c074d13ca66618fa1930a0fa32);
+        
+    
+        var popup_7c087a8ccc1455b7acf1b0a3cd950b89 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cdb1f73f6a13440b6b80346b93e167cb = $(`<div id="html_cdb1f73f6a13440b6b80346b93e167cb" style="width: 100.0%; height: 100.0%;"><b>IndianOil</b><br>Petrol Pump<br>Khata No 87, Plot No 839, Ranchi Ring Rd, Nagri, Balalong, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJLUPk6Ish9TkRU4DqfOPJe8g</div>`)[0];
+                popup_7c087a8ccc1455b7acf1b0a3cd950b89.setContent(html_cdb1f73f6a13440b6b80346b93e167cb);
+            
+        
+
+        marker_97a65193b5e2b47d84fa9def7c70a39c.bindPopup(popup_7c087a8ccc1455b7acf1b0a3cd950b89)
+        ;
+
+        
+    
+    
+            marker_97a65193b5e2b47d84fa9def7c70a39c.bindTooltip(
+                `<div>
+                     IndianOil
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f07476e37a2c96b596eec52e26718c86 = L.marker(
+                [23.3801856, 85.3050184],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_154281accc7ba70dfb4d0eedc0580199 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f07476e37a2c96b596eec52e26718c86.setIcon(icon_154281accc7ba70dfb4d0eedc0580199);
+        
+    
+        var popup_6361c5a30efc2d9e86d5cbd0bf4170ed = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cdb6a639de39866eede409acf7f8e22a = $(`<div id="html_cdb6a639de39866eede409acf7f8e22a" style="width: 100.0%; height: 100.0%;"><b>Ram Bilas Prasad and Sons</b><br>Petrol Pump<br>Ratu Rd, Kumhartoli, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJjwoXNObg9DkRVHRjXCuCUZY</div>`)[0];
+                popup_6361c5a30efc2d9e86d5cbd0bf4170ed.setContent(html_cdb6a639de39866eede409acf7f8e22a);
+            
+        
+
+        marker_f07476e37a2c96b596eec52e26718c86.bindPopup(popup_6361c5a30efc2d9e86d5cbd0bf4170ed)
+        ;
+
+        
+    
+    
+            marker_f07476e37a2c96b596eec52e26718c86.bindTooltip(
+                `<div>
+                     Ram Bilas Prasad and Sons
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d335d5ee48b797c93b8067e3c085c7ab = L.marker(
+                [23.4224075, 85.2008149],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_07a289811d5f605e671497dfe870a080 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d335d5ee48b797c93b8067e3c085c7ab.setIcon(icon_07a289811d5f605e671497dfe870a080);
+        
+    
+        var popup_ffbd1222c53942d197055e6562ea1645 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_749e1555bfa9331a492a4ef9f5331d5e = $(`<div id="html_749e1555bfa9331a492a4ef9f5331d5e" style="width: 100.0%; height: 100.0%;"><b>IndianOil</b><br>Petrol Pump<br>Ground Floor NH 75, Brajpur, Bijjulia, Ratu, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJbyABGRLc9DkRnfqdjuFTVZI</div>`)[0];
+                popup_ffbd1222c53942d197055e6562ea1645.setContent(html_749e1555bfa9331a492a4ef9f5331d5e);
+            
+        
+
+        marker_d335d5ee48b797c93b8067e3c085c7ab.bindPopup(popup_ffbd1222c53942d197055e6562ea1645)
+        ;
+
+        
+    
+    
+            marker_d335d5ee48b797c93b8067e3c085c7ab.bindTooltip(
+                `<div>
+                     IndianOil
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2b7b646efdbad58d4f2f9c424e1fca7c = L.marker(
+                [23.4063953, 85.2290515],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_07791b0cb160d91d330e698ccf6d5466 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2b7b646efdbad58d4f2f9c424e1fca7c.setIcon(icon_07791b0cb160d91d330e698ccf6d5466);
+        
+    
+        var popup_23484ff9e62bacc0a4977ec96328ea22 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f56a1b5a4406fdc85e038c59dc267a6e = $(`<div id="html_f56a1b5a4406fdc85e038c59dc267a6e" style="width: 100.0%; height: 100.0%;"><b>IndianOil</b><br>Petrol Pump<br>Ground Floor Pirra, opposite All India Radio Transmis, Bijulia, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJl6sZkyrc9DkR1L65RpZ_Q6k</div>`)[0];
+                popup_23484ff9e62bacc0a4977ec96328ea22.setContent(html_f56a1b5a4406fdc85e038c59dc267a6e);
+            
+        
+
+        marker_2b7b646efdbad58d4f2f9c424e1fca7c.bindPopup(popup_23484ff9e62bacc0a4977ec96328ea22)
+        ;
+
+        
+    
+    
+            marker_2b7b646efdbad58d4f2f9c424e1fca7c.bindTooltip(
+                `<div>
+                     IndianOil
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_57cdfed60aa1b62372e073b70ab0adb9 = L.marker(
+                [23.3924451, 85.3138949],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_63240b7b423b5e0870719b615eb8e6df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_57cdfed60aa1b62372e073b70ab0adb9.setIcon(icon_63240b7b423b5e0870719b615eb8e6df);
+        
+    
+        var popup_46de569da9e85acf44ecbecaef50a117 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_742ac46c08987b1da895a816dec14032 = $(`<div id="html_742ac46c08987b1da895a816dec14032" style="width: 100.0%; height: 100.0%;"><b>Indian Oil</b><br>Petrol Pump<br>Ground Floor, Kanke Rd, near Jawahar Nagar, Jawahar Nagar, Hatma, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJX1OOfifh9DkRLQtF8CKkq4M</div>`)[0];
+                popup_46de569da9e85acf44ecbecaef50a117.setContent(html_742ac46c08987b1da895a816dec14032);
+            
+        
+
+        marker_57cdfed60aa1b62372e073b70ab0adb9.bindPopup(popup_46de569da9e85acf44ecbecaef50a117)
+        ;
+
+        
+    
+    
+            marker_57cdfed60aa1b62372e073b70ab0adb9.bindTooltip(
+                `<div>
+                     Indian Oil
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_57db3cffe6418880900d3f4ebed52070 = L.marker(
+                [23.3614812, 85.35402649999999],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_be9fe94c0521af00ca85d78c6a053a75 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_57db3cffe6418880900d3f4ebed52070.setIcon(icon_be9fe94c0521af00ca85d78c6a053a75);
+        
+    
+        var popup_534193b1a76f80069cc1b4ac2948436a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4ed411fcaae8ad3b0198e7899d85e01f = $(`<div id="html_4ed411fcaae8ad3b0198e7899d85e01f" style="width: 100.0%; height: 100.0%;"><b>Rambhagat Hari Prasad (HP petrol pump)</b><br>Petrol Pump<br>Hanuman Mandir, Purulia Rd, Samlong, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJywDz9n_h9DkR3WdyMP_V1_0</div>`)[0];
+                popup_534193b1a76f80069cc1b4ac2948436a.setContent(html_4ed411fcaae8ad3b0198e7899d85e01f);
+            
+        
+
+        marker_57db3cffe6418880900d3f4ebed52070.bindPopup(popup_534193b1a76f80069cc1b4ac2948436a)
+        ;
+
+        
+    
+    
+            marker_57db3cffe6418880900d3f4ebed52070.bindTooltip(
+                `<div>
+                     Rambhagat Hari Prasad (HP petrol pump)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0938580fa27bcee2c102f449a11044cc = L.marker(
+                [23.3088376, 85.3171308],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_17ca43e49ec2a4b4418ae4edd91eafae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0938580fa27bcee2c102f449a11044cc.setIcon(icon_17ca43e49ec2a4b4418ae4edd91eafae);
+        
+    
+        var popup_9420a3447126204d6d5cdc87864636e2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b8a35c40c0403e733c75d2a5c3e18ecb = $(`<div id="html_b8a35c40c0403e733c75d2a5c3e18ecb" style="width: 100.0%; height: 100.0%;"><b>Hindustan Petroleum Corporation Limited</b><br>Petrol Pump<br>Ground Floor, Solanki Kalyanpur, Hatia, Jagannathpur, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJ80ZwtSse9TkRgsfGUl9WTqg</div>`)[0];
+                popup_9420a3447126204d6d5cdc87864636e2.setContent(html_b8a35c40c0403e733c75d2a5c3e18ecb);
+            
+        
+
+        marker_0938580fa27bcee2c102f449a11044cc.bindPopup(popup_9420a3447126204d6d5cdc87864636e2)
+        ;
+
+        
+    
+    
+            marker_0938580fa27bcee2c102f449a11044cc.bindTooltip(
+                `<div>
+                     Hindustan Petroleum Corporation Limited
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_656769c63e5579d56e7d416cd3c86853 = L.marker(
+                [23.4046412, 85.3945131],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_ccdaa298bf51a8fd127fb0d0cbf42380 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_656769c63e5579d56e7d416cd3c86853.setIcon(icon_ccdaa298bf51a8fd127fb0d0cbf42380);
+        
+    
+        var popup_8507d5f7d8fc48ed1986c00af8cb0d1c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e8426a44bef63ccab23b169583cce2a0 = $(`<div id="html_e8426a44bef63ccab23b169583cce2a0" style="width: 100.0%; height: 100.0%;"><b>IndianOil</b><br>Petrol Pump<br>Ground Floor, Booty More Rd, Krishna Pura, Ohdar Village, Neori, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJC5bcTIXj9DkRh6iIHDp3Ee4</div>`)[0];
+                popup_8507d5f7d8fc48ed1986c00af8cb0d1c.setContent(html_e8426a44bef63ccab23b169583cce2a0);
+            
+        
+
+        marker_656769c63e5579d56e7d416cd3c86853.bindPopup(popup_8507d5f7d8fc48ed1986c00af8cb0d1c)
+        ;
+
+        
+    
+    
+            marker_656769c63e5579d56e7d416cd3c86853.bindTooltip(
+                `<div>
+                     IndianOil
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1866adcc9733ae041fb4b3db6a73f3f6 = L.marker(
+                [23.356401, 85.260193],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_d1739cb2060d34c9a1bc6a937eb37f5e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1866adcc9733ae041fb4b3db6a73f3f6.setIcon(icon_d1739cb2060d34c9a1bc6a937eb37f5e);
+        
+    
+        var popup_6c66394214daebbb13c6c57e6ffb2a0f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_876d2dfbee12885f0e81528ec027b841 = $(`<div id="html_876d2dfbee12885f0e81528ec027b841" style="width: 100.0%; height: 100.0%;"><b>IndianOil</b><br>Petrol Pump<br>Argora Chowk, Pundag, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJWyqFEc3f9DkRxPvjh1cYxU8</div>`)[0];
+                popup_6c66394214daebbb13c6c57e6ffb2a0f.setContent(html_876d2dfbee12885f0e81528ec027b841);
+            
+        
+
+        marker_1866adcc9733ae041fb4b3db6a73f3f6.bindPopup(popup_6c66394214daebbb13c6c57e6ffb2a0f)
+        ;
+
+        
+    
+    
+            marker_1866adcc9733ae041fb4b3db6a73f3f6.bindTooltip(
+                `<div>
+                     IndianOil
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bc304f5999b933071a4fa75a3a597256 = L.marker(
+                [23.3523428, 85.3315155],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_fe1afbd209782eaab1532e8924608cf2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_bc304f5999b933071a4fa75a3a597256.setIcon(icon_fe1afbd209782eaab1532e8924608cf2);
+        
+    
+        var popup_de6eb83b6514e1315e524a72fb8c72f5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1b56b5fbfaba8149a2f7d30c189667e7 = $(`<div id="html_1b56b5fbfaba8149a2f7d30c189667e7" style="width: 100.0%; height: 100.0%;"><b>Hindustan Petroleum Corporation Limited</b><br>Petrol Pump<br>Ground Floor, Hazaribagh Road, Sirom Toly, Gosaintola, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJCciaFzrh9DkRHbBYmjlurCs</div>`)[0];
+                popup_de6eb83b6514e1315e524a72fb8c72f5.setContent(html_1b56b5fbfaba8149a2f7d30c189667e7);
+            
+        
+
+        marker_bc304f5999b933071a4fa75a3a597256.bindPopup(popup_de6eb83b6514e1315e524a72fb8c72f5)
+        ;
+
+        
+    
+    
+            marker_bc304f5999b933071a4fa75a3a597256.bindTooltip(
+                `<div>
+                     Hindustan Petroleum Corporation Limited
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cab18c4c8d0e9308aa8c53f59e121a4d = L.marker(
+                [23.378915, 85.3621089],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_b709030e6f66a6441e6e37687b6686f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_cab18c4c8d0e9308aa8c53f59e121a4d.setIcon(icon_b709030e6f66a6441e6e37687b6686f8);
+        
+    
+        var popup_25de196c187486b53b296562ce339859 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8ad5f0b34deb92471a593fca7d237849 = $(`<div id="html_8ad5f0b34deb92471a593fca7d237849" style="width: 100.0%; height: 100.0%;"><b>Bijoy Automobiles Bharat Petroleum</b><br>Petrol Pump<br>99H6+HR9, Hazaribagh Rd, Kokar, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJZ8UGhtvj9DkR_6CEtX2pmLc</div>`)[0];
+                popup_25de196c187486b53b296562ce339859.setContent(html_8ad5f0b34deb92471a593fca7d237849);
+            
+        
+
+        marker_cab18c4c8d0e9308aa8c53f59e121a4d.bindPopup(popup_25de196c187486b53b296562ce339859)
+        ;
+
+        
+    
+    
+            marker_cab18c4c8d0e9308aa8c53f59e121a4d.bindTooltip(
+                `<div>
+                     Bijoy Automobiles Bharat Petroleum
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bcf40e6502ab2e7b1a2658af1fa4500b = L.marker(
+                [23.372442, 85.323441],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_440fcae92b28475bd8f497e93e4dea25 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_bcf40e6502ab2e7b1a2658af1fa4500b.setIcon(icon_440fcae92b28475bd8f497e93e4dea25);
+        
+    
+        var popup_18a4d0481a62c9b1d19634d9a1910cad = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_660afe6d4b63817820f3e88409679364 = $(`<div id="html_660afe6d4b63817820f3e88409679364" style="width: 100.0%; height: 100.0%;"><b>IndianOil</b><br>Petrol Pump<br>Ground Floor, Kutchery Rd, Deputy Para, Ahirtoli, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJN07drhrh9DkRtBeaUwJdtsY</div>`)[0];
+                popup_18a4d0481a62c9b1d19634d9a1910cad.setContent(html_660afe6d4b63817820f3e88409679364);
+            
+        
+
+        marker_bcf40e6502ab2e7b1a2658af1fa4500b.bindPopup(popup_18a4d0481a62c9b1d19634d9a1910cad)
+        ;
+
+        
+    
+    
+            marker_bcf40e6502ab2e7b1a2658af1fa4500b.bindTooltip(
+                `<div>
+                     IndianOil
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3713d191a852dceedee9446b0371d89d = L.marker(
+                [23.3351017, 85.3425121],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_1883334f4ff6d1113cdea1e09dc1c812 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3713d191a852dceedee9446b0371d89d.setIcon(icon_1883334f4ff6d1113cdea1e09dc1c812);
+        
+    
+        var popup_de2d91bc8c643812c623bc70f488b791 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c799fbfcf2589a756df88bb86fe0d414 = $(`<div id="html_c799fbfcf2589a756df88bb86fe0d414" style="width: 100.0%; height: 100.0%;"><b>Palash Fuels</b><br>Petrol Pump<br>LHS on Doranda, Namkum Main Rd, Bara Ghaghra, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJyyq-7wnh9DkRGJ7owm4uCZc</div>`)[0];
+                popup_de2d91bc8c643812c623bc70f488b791.setContent(html_c799fbfcf2589a756df88bb86fe0d414);
+            
+        
+
+        marker_3713d191a852dceedee9446b0371d89d.bindPopup(popup_de2d91bc8c643812c623bc70f488b791)
+        ;
+
+        
+    
+    
+            marker_3713d191a852dceedee9446b0371d89d.bindTooltip(
+                `<div>
+                     Palash Fuels
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fee78ceb2d81342976c3eea20b738fae = L.marker(
+                [23.372123, 85.33827099999999],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_3d52dc2ff8674ff758533af77c116782 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_fee78ceb2d81342976c3eea20b738fae.setIcon(icon_3d52dc2ff8674ff758533af77c116782);
+        
+    
+        var popup_39d19e81ea85b1802ec0144330a98330 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8b243945560060f12001ca44bbb9b1bd = $(`<div id="html_8b243945560060f12001ca44bbb9b1bd" style="width: 100.0%; height: 100.0%;"><b>IndianOil</b><br>Petrol Pump<br>Hatma, Lalpur, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJ47QLKqPh9DkRD-_Ddic-U_E</div>`)[0];
+                popup_39d19e81ea85b1802ec0144330a98330.setContent(html_8b243945560060f12001ca44bbb9b1bd);
+            
+        
+
+        marker_fee78ceb2d81342976c3eea20b738fae.bindPopup(popup_39d19e81ea85b1802ec0144330a98330)
+        ;
+
+        
+    
+    
+            marker_fee78ceb2d81342976c3eea20b738fae.bindTooltip(
+                `<div>
+                     IndianOil
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d975d60db7c41195d1a6e2c18d51a0f3 = L.marker(
+                [23.3730288, 85.3553639],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_4614de002152945cfa435fb4d7129767 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d975d60db7c41195d1a6e2c18d51a0f3.setIcon(icon_4614de002152945cfa435fb4d7129767);
+        
+    
+        var popup_be65d56b8d3a7de5f872bacb1a41565b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0d14195e84a3f949299eea54f3e12b0e = $(`<div id="html_0d14195e84a3f949299eea54f3e12b0e" style="width: 100.0%; height: 100.0%;"><b>Hindustan Petroleum Corporation Limited</b><br>Petrol Pump<br>Ground Floor, Khorha Toli, Kokar, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJvbcG_Nfj9DkRGrTYIJynYaw</div>`)[0];
+                popup_be65d56b8d3a7de5f872bacb1a41565b.setContent(html_0d14195e84a3f949299eea54f3e12b0e);
+            
+        
+
+        marker_d975d60db7c41195d1a6e2c18d51a0f3.bindPopup(popup_be65d56b8d3a7de5f872bacb1a41565b)
+        ;
+
+        
+    
+    
+            marker_d975d60db7c41195d1a6e2c18d51a0f3.bindTooltip(
+                `<div>
+                     Hindustan Petroleum Corporation Limited
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a748a7f2dfc3067b1ffd930d4aaba9d2 = L.marker(
+                [23.3581935, 85.33759909999999],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_504cc1e3652b88d141a9cb650ceb41b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a748a7f2dfc3067b1ffd930d4aaba9d2.setIcon(icon_504cc1e3652b88d141a9cb650ceb41b4);
+        
+    
+        var popup_e8230d0800dc24a0323bb944eee84cd1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c94ba9e0ed17440332fc5910f5f49920 = $(`<div id="html_c94ba9e0ed17440332fc5910f5f49920" style="width: 100.0%; height: 100.0%;"><b>Hindustan Petroleum Corporation Limited</b><br>Petrol Pump<br>Ground Floor, Bahu Bazar Rd, Bahu Bazar, Konka, Kathartoli, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJtR4fWp7h9DkR57rOSsY19cs</div>`)[0];
+                popup_e8230d0800dc24a0323bb944eee84cd1.setContent(html_c94ba9e0ed17440332fc5910f5f49920);
+            
+        
+
+        marker_a748a7f2dfc3067b1ffd930d4aaba9d2.bindPopup(popup_e8230d0800dc24a0323bb944eee84cd1)
+        ;
+
+        
+    
+    
+            marker_a748a7f2dfc3067b1ffd930d4aaba9d2.bindTooltip(
+                `<div>
+                     Hindustan Petroleum Corporation Limited
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a617ee639ad8b4024b78c3fd764164eb = L.marker(
+                [23.371553, 85.328721],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_8a2c387d1d3e433a7733281ff683f7d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a617ee639ad8b4024b78c3fd764164eb.setIcon(icon_8a2c387d1d3e433a7733281ff683f7d9);
+        
+    
+        var popup_80af956529c1145d1f72ca4cda67dfd7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b8afa271e8f50124f891d37dd339fe17 = $(`<div id="html_b8afa271e8f50124f891d37dd339fe17" style="width: 100.0%; height: 100.0%;"><b>IndianOil</b><br>Petrol Pump<br>Hazaribagh Rd, Tharpakhna, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJB0pwDw7h9DkRGcJD0F50WWw</div>`)[0];
+                popup_80af956529c1145d1f72ca4cda67dfd7.setContent(html_b8afa271e8f50124f891d37dd339fe17);
+            
+        
+
+        marker_a617ee639ad8b4024b78c3fd764164eb.bindPopup(popup_80af956529c1145d1f72ca4cda67dfd7)
+        ;
+
+        
+    
+    
+            marker_a617ee639ad8b4024b78c3fd764164eb.bindTooltip(
+                `<div>
+                     IndianOil
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c5b67dd6f2197507a5cf5053674cfd13 = L.marker(
+                [23.2693757, 85.25865399999999],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_5c6b859a287a54fe42b5c03f8da1e5c2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c5b67dd6f2197507a5cf5053674cfd13.setIcon(icon_5c6b859a287a54fe42b5c03f8da1e5c2);
+        
+    
+        var popup_cb388b1b8f2edbd377ef1cba8ccd9824 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1f23a8f79ea70a363e2e39c552412a86 = $(`<div id="html_1f23a8f79ea70a363e2e39c552412a86" style="width: 100.0%; height: 100.0%;"><b>IndianOil</b><br>Petrol Pump<br>Ground Floor, Ranchi Ring Rd, Sithiyo, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJCflHfTEg9TkRtFJIBgQQk0A</div>`)[0];
+                popup_cb388b1b8f2edbd377ef1cba8ccd9824.setContent(html_1f23a8f79ea70a363e2e39c552412a86);
+            
+        
+
+        marker_c5b67dd6f2197507a5cf5053674cfd13.bindPopup(popup_cb388b1b8f2edbd377ef1cba8ccd9824)
+        ;
+
+        
+    
+    
+            marker_c5b67dd6f2197507a5cf5053674cfd13.bindTooltip(
+                `<div>
+                     IndianOil
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6c5c8f4ea0de79768e4ff6bfb752bd48 = L.marker(
+                [23.3902458, 85.3144021],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_daf3cc99440988fa802b749f7a03caec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6c5c8f4ea0de79768e4ff6bfb752bd48.setIcon(icon_daf3cc99440988fa802b749f7a03caec);
+        
+    
+        var popup_8267d0807c1ea489ebae8bf168e6ec47 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_435a3d72c07a19b38a1cd80bf5dcf92d = $(`<div id="html_435a3d72c07a19b38a1cd80bf5dcf92d" style="width: 100.0%; height: 100.0%;"><b>Shakambari Fuels</b><br>Petrol Pump<br>160, Jawahar Nagar, Hatma, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJAyMEI73h9DkR-mrcCFkJLOg</div>`)[0];
+                popup_8267d0807c1ea489ebae8bf168e6ec47.setContent(html_435a3d72c07a19b38a1cd80bf5dcf92d);
+            
+        
+
+        marker_6c5c8f4ea0de79768e4ff6bfb752bd48.bindPopup(popup_8267d0807c1ea489ebae8bf168e6ec47)
+        ;
+
+        
+    
+    
+            marker_6c5c8f4ea0de79768e4ff6bfb752bd48.bindTooltip(
+                `<div>
+                     Shakambari Fuels
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6ccd5b71c87d5bdb7b71c518b8e7d2b0 = L.marker(
+                [23.3224526, 85.3048175],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_6b1e656cb4094253fa6c76e5412ec147 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6ccd5b71c87d5bdb7b71c518b8e7d2b0.setIcon(icon_6b1e656cb4094253fa6c76e5412ec147);
+        
+    
+        var popup_daf8af13023772160ffd9811fdd7188f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_06d7a0e1017cf736cbf5fab0ea1d4504 = $(`<div id="html_06d7a0e1017cf736cbf5fab0ea1d4504" style="width: 100.0%; height: 100.0%;"><b>Jio-bp</b><br>Petrol Pump<br>NEAR CHECK POST, SECTOR 2, HEC Colony, POST, Dhurwa, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJMZ3-vi_g9DkRj-xe-ZhP9B8</div>`)[0];
+                popup_daf8af13023772160ffd9811fdd7188f.setContent(html_06d7a0e1017cf736cbf5fab0ea1d4504);
+            
+        
+
+        marker_6ccd5b71c87d5bdb7b71c518b8e7d2b0.bindPopup(popup_daf8af13023772160ffd9811fdd7188f)
+        ;
+
+        
+    
+    
+            marker_6ccd5b71c87d5bdb7b71c518b8e7d2b0.bindTooltip(
+                `<div>
+                     Jio-bp
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3f442e2965e07c9cf503fa86f689f774 = L.marker(
+                [23.2544236, 85.3002036],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_90618a6c4d44edc7e8cb9800e8e6c8d7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3f442e2965e07c9cf503fa86f689f774.setIcon(icon_90618a6c4d44edc7e8cb9800e8e6c8d7);
+        
+    
+        var popup_3d7b3d9711d1d58249e1ad410fc57557 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8684e32235c53580d9deeb3652cb750e = $(`<div id="html_8684e32235c53580d9deeb3652cb750e" style="width: 100.0%; height: 100.0%;"><b>Chirag Filling Station, Bharat Petrolatum</b><br>Petrol Pump<br>Satrangi, Tupudana, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJSdUKPiAf9TkRRR-alDXm_IY</div>`)[0];
+                popup_3d7b3d9711d1d58249e1ad410fc57557.setContent(html_8684e32235c53580d9deeb3652cb750e);
+            
+        
+
+        marker_3f442e2965e07c9cf503fa86f689f774.bindPopup(popup_3d7b3d9711d1d58249e1ad410fc57557)
+        ;
+
+        
+    
+    
+            marker_3f442e2965e07c9cf503fa86f689f774.bindTooltip(
+                `<div>
+                     Chirag Filling Station, Bharat Petrolatum
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e17dd85094e1be39a13185676723ad0f = L.marker(
+                [23.3557104, 85.324998],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_bf2debd7556d0f0c3f337b507a6b74f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e17dd85094e1be39a13185676723ad0f.setIcon(icon_bf2debd7556d0f0c3f337b507a6b74f3);
+        
+    
+        var popup_ce4d30cbb4fb0d6daf45327c0ab755aa = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_cccb16eb535c3331908dafd5d6349251 = $(`<div id="html_cccb16eb535c3331908dafd5d6349251" style="width: 100.0%; height: 100.0%;"><b>Bharat Petroleum</b><br>Petrol Pump<br>NH-33, KOKAR, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJndWI1Azh9DkRkFz3ZpzilDw</div>`)[0];
+                popup_ce4d30cbb4fb0d6daf45327c0ab755aa.setContent(html_cccb16eb535c3331908dafd5d6349251);
+            
+        
+
+        marker_e17dd85094e1be39a13185676723ad0f.bindPopup(popup_ce4d30cbb4fb0d6daf45327c0ab755aa)
+        ;
+
+        
+    
+    
+            marker_e17dd85094e1be39a13185676723ad0f.bindTooltip(
+                `<div>
+                     Bharat Petroleum
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3cf9a988087ddfe93e46f091e64c4ee3 = L.marker(
+                [23.383481, 85.367836],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_7e67bd55badaab8b544be02ac51768a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3cf9a988087ddfe93e46f091e64c4ee3.setIcon(icon_7e67bd55badaab8b544be02ac51768a1);
+        
+    
+        var popup_4e938708ad220be484b05d9cf0ab39dc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f11e8b3d2e78a1844c8a500195958ece = $(`<div id="html_f11e8b3d2e78a1844c8a500195958ece" style="width: 100.0%; height: 100.0%;"><b>IndianOil</b><br>Petrol Pump<br>Ground Floor, Gari, Bariatu, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJzQv2hSHj9DkRpTepfoC5NPc</div>`)[0];
+                popup_4e938708ad220be484b05d9cf0ab39dc.setContent(html_f11e8b3d2e78a1844c8a500195958ece);
+            
+        
+
+        marker_3cf9a988087ddfe93e46f091e64c4ee3.bindPopup(popup_4e938708ad220be484b05d9cf0ab39dc)
+        ;
+
+        
+    
+    
+            marker_3cf9a988087ddfe93e46f091e64c4ee3.bindTooltip(
+                `<div>
+                     IndianOil
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4746ebd752d53a56f254abec3401e3ff = L.marker(
+                [23.394947, 85.263275],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_7071db2c69678bb98a28b321b4c77c6d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4746ebd752d53a56f254abec3401e3ff.setIcon(icon_7071db2c69678bb98a28b321b4c77c6d);
+        
+    
+        var popup_5e1baf13ab59224d0087bb70b61e6fc9 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_990bd614cebaece85e94b4656be76434 = $(`<div id="html_990bd614cebaece85e94b4656be76434" style="width: 100.0%; height: 100.0%;"><b>Jio-bp</b><br>Petrol Pump<br>Plot No 503, Khata No 10, Thana No 144, Ratu, Ranchi, Kamre<br>Status: OPERATIONAL<br>Place ID: ChIJgycuOAXe9DkRkLLBZhqKCL0</div>`)[0];
+                popup_5e1baf13ab59224d0087bb70b61e6fc9.setContent(html_990bd614cebaece85e94b4656be76434);
+            
+        
+
+        marker_4746ebd752d53a56f254abec3401e3ff.bindPopup(popup_5e1baf13ab59224d0087bb70b61e6fc9)
+        ;
+
+        
+    
+    
+            marker_4746ebd752d53a56f254abec3401e3ff.bindTooltip(
+                `<div>
+                     Jio-bp
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ae581dacd92be9a193293df4c84b2cac = L.marker(
+                [23.3652078, 85.24340450000001],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_3d8a75420424e309c926a96bc1f3a2a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ae581dacd92be9a193293df4c84b2cac.setIcon(icon_3d8a75420424e309c926a96bc1f3a2a3);
+        
+    
+        var popup_8f055279d957a582f879a755f4436024 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_de93fea55399e9febdf55ac953591923 = $(`<div id="html_de93fea55399e9febdf55ac953591923" style="width: 100.0%; height: 100.0%;"><b>Bharat Petroleum Petrol Pump</b><br>Petrol Pump<br>968V+38Q, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJ598SZ07e9DkRRP7_Ge2xs3w</div>`)[0];
+                popup_8f055279d957a582f879a755f4436024.setContent(html_de93fea55399e9febdf55ac953591923);
+            
+        
+
+        marker_ae581dacd92be9a193293df4c84b2cac.bindPopup(popup_8f055279d957a582f879a755f4436024)
+        ;
+
+        
+    
+    
+            marker_ae581dacd92be9a193293df4c84b2cac.bindTooltip(
+                `<div>
+                     Bharat Petroleum Petrol Pump
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e5416dd4b58772c32528e007e4ec4fe7 = L.marker(
+                [23.4206263, 85.3171583],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_0c3febc72020fe8aa798c9df368e917a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e5416dd4b58772c32528e007e4ec4fe7.setIcon(icon_0c3febc72020fe8aa798c9df368e917a);
+        
+    
+        var popup_f2c3a4d972ba0e974c5fdea67e8306a2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dcc59082a5cd42a9201ed6af55fa2fcd = $(`<div id="html_dcc59082a5cd42a9201ed6af55fa2fcd" style="width: 100.0%; height: 100.0%;"><b>Gloria Fuel Centre HP Petrol Pump</b><br>Petrol Pump<br>Next to Oraon Complex, Jharkhand State Highway 2, Kanke Rd, Jhirga Toli, Gandhi Nagar, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJPXVGz_Tn9DkRd7lpndSuLCM</div>`)[0];
+                popup_f2c3a4d972ba0e974c5fdea67e8306a2.setContent(html_dcc59082a5cd42a9201ed6af55fa2fcd);
+            
+        
+
+        marker_e5416dd4b58772c32528e007e4ec4fe7.bindPopup(popup_f2c3a4d972ba0e974c5fdea67e8306a2)
+        ;
+
+        
+    
+    
+            marker_e5416dd4b58772c32528e007e4ec4fe7.bindTooltip(
+                `<div>
+                     Gloria Fuel Centre HP Petrol Pump
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_18a37077dddd720bf9386e7497c93f94 = L.marker(
+                [23.3924479, 85.3138877],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_a1f63b9d32ba4a7b391b9d13c701df79 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_18a37077dddd720bf9386e7497c93f94.setIcon(icon_a1f63b9d32ba4a7b391b9d13c701df79);
+        
+    
+        var popup_e2470dcda3569c966e98b2e86ec11dd4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_9300f74d210c0996cf7034557ab13233 = $(`<div id="html_9300f74d210c0996cf7034557ab13233" style="width: 100.0%; height: 100.0%;"><b>KANKE SERVICE CENTRE</b><br>Petrol Pump<br>98R7+XHV, Kanke Rd, near Petrol Pump, Jawahar Nagar, Hatma, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJ3_IIJADh9DkRMNRJI0BxtX0</div>`)[0];
+                popup_e2470dcda3569c966e98b2e86ec11dd4.setContent(html_9300f74d210c0996cf7034557ab13233);
+            
+        
+
+        marker_18a37077dddd720bf9386e7497c93f94.bindPopup(popup_e2470dcda3569c966e98b2e86ec11dd4)
+        ;
+
+        
+    
+    
+            marker_18a37077dddd720bf9386e7497c93f94.bindTooltip(
+                `<div>
+                     KANKE SERVICE CENTRE
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9b4790ddb22fdd5b7acb3556e6b7ec68 = L.marker(
+                [23.2812737, 85.41416520000001],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_716015553105b74442ad51af9b31e7a3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9b4790ddb22fdd5b7acb3556e6b7ec68.setIcon(icon_716015553105b74442ad51af9b31e7a3);
+        
+    
+        var popup_4e38b97f75c5fe7a8fac6260e74147c8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_664e752c4a60c248d097441ab7c7dc6f = $(`<div id="html_664e752c4a60c248d097441ab7c7dc6f" style="width: 100.0%; height: 100.0%;"><b>Bharat Petroleum, Petrol Pump -Rajhans Filling Station</b><br>Petrol Pump<br>834010Best EV Charging facility in Ranchi JAMSH Ranchi Jharkhand IN, Rampur<br>Status: OPERATIONAL<br>Place ID: ChIJe4WWLzgd9TkRR4apZQxuzaU</div>`)[0];
+                popup_4e38b97f75c5fe7a8fac6260e74147c8.setContent(html_664e752c4a60c248d097441ab7c7dc6f);
+            
+        
+
+        marker_9b4790ddb22fdd5b7acb3556e6b7ec68.bindPopup(popup_4e38b97f75c5fe7a8fac6260e74147c8)
+        ;
+
+        
+    
+    
+            marker_9b4790ddb22fdd5b7acb3556e6b7ec68.bindTooltip(
+                `<div>
+                     Bharat Petroleum, Petrol Pump -Rajhans Filling Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7b528e750dfaa980c45e002c2eefc002 = L.marker(
+                [23.3728945, 85.27718139999999],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_edb278e71474b5bbd55970a2c06ef008 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_7b528e750dfaa980c45e002c2eefc002.setIcon(icon_edb278e71474b5bbd55970a2c06ef008);
+        
+    
+        var popup_2c54a6c784cbbe42b38c5d4e7f9ea67d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_51975d080a088e2f89fea9a36cb5c80a = $(`<div id="html_51975d080a088e2f89fea9a36cb5c80a" style="width: 100.0%; height: 100.0%;"><b>IndianOil</b><br>Petrol Pump<br>Hehal, Itki Rd, Pahartoli, Bajra, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJ2SFgm5zg9DkRAUTvcbJzn7U</div>`)[0];
+                popup_2c54a6c784cbbe42b38c5d4e7f9ea67d.setContent(html_51975d080a088e2f89fea9a36cb5c80a);
+            
+        
+
+        marker_7b528e750dfaa980c45e002c2eefc002.bindPopup(popup_2c54a6c784cbbe42b38c5d4e7f9ea67d)
+        ;
+
+        
+    
+    
+            marker_7b528e750dfaa980c45e002c2eefc002.bindTooltip(
+                `<div>
+                     IndianOil
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c6625289348adf33162e94dd33dfdd95 = L.marker(
+                [23.3509229, 85.3140719],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_8217a92671d4325ec155fe65f811c298 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c6625289348adf33162e94dd33dfdd95.setIcon(icon_8217a92671d4325ec155fe65f811c298);
+        
+    
+        var popup_c9e0c9c9c0b2df13d9fc9aebffbb231c = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3c5a20e5de13bb617cb01111b5c9c707 = $(`<div id="html_3c5a20e5de13bb617cb01111b5c9c707" style="width: 100.0%; height: 100.0%;"><b>Bharat Petroleum Petrol Pump</b><br>Petrol Pump<br>88X7+RHJ, Kadru - Kumhartoli Rd, Kadru, Ashok Nagar, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJ1yUvKa3h9DkRZNz5votOSUM</div>`)[0];
+                popup_c9e0c9c9c0b2df13d9fc9aebffbb231c.setContent(html_3c5a20e5de13bb617cb01111b5c9c707);
+            
+        
+
+        marker_c6625289348adf33162e94dd33dfdd95.bindPopup(popup_c9e0c9c9c0b2df13d9fc9aebffbb231c)
+        ;
+
+        
+    
+    
+            marker_c6625289348adf33162e94dd33dfdd95.bindTooltip(
+                `<div>
+                     Bharat Petroleum Petrol Pump
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cda991c212c01bd9ae0c52dc479a75bc = L.marker(
+                [23.4482354, 85.2738217],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_6fa4a7ab97c4dfe3ad9f5b3d5d665107 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_cda991c212c01bd9ae0c52dc479a75bc.setIcon(icon_6fa4a7ab97c4dfe3ad9f5b3d5d665107);
+        
+    
+        var popup_2fb9a80b0d8babb9bc8fc7f7d3807d33 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a44caed47641d9977146b8f8e4e312b0 = $(`<div id="html_a44caed47641d9977146b8f8e4e312b0" style="width: 100.0%; height: 100.0%;"><b>IndianOil</b><br>Petrol Pump<br>Ground Floor, Kanke, Sukurhutu, Bukru<br>Status: OPERATIONAL<br>Place ID: ChIJexyZEvDn9DkRTjksZW7l7V4</div>`)[0];
+                popup_2fb9a80b0d8babb9bc8fc7f7d3807d33.setContent(html_a44caed47641d9977146b8f8e4e312b0);
+            
+        
+
+        marker_cda991c212c01bd9ae0c52dc479a75bc.bindPopup(popup_2fb9a80b0d8babb9bc8fc7f7d3807d33)
+        ;
+
+        
+    
+    
+            marker_cda991c212c01bd9ae0c52dc479a75bc.bindTooltip(
+                `<div>
+                     IndianOil
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8db04ee07b0772196950230141579230 = L.marker(
+                [23.4205343, 85.2263471],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_8b01fbd6041b0c63664052da344a3682 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_8db04ee07b0772196950230141579230.setIcon(icon_8b01fbd6041b0c63664052da344a3682);
+        
+    
+        var popup_da3c08b64235c2ecc769e2ff5886edb8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d4ef0f38fc0542948569c760fe64bdb6 = $(`<div id="html_d4ef0f38fc0542948569c760fe64bdb6" style="width: 100.0%; height: 100.0%;"><b>IndianOil</b><br>Petrol Pump<br>Ground Floor Bijjulia, Bazar Tand, Ratu, Hurhuri, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJj-V9vInd9DkRAPdgDzPXx7g</div>`)[0];
+                popup_da3c08b64235c2ecc769e2ff5886edb8.setContent(html_d4ef0f38fc0542948569c760fe64bdb6);
+            
+        
+
+        marker_8db04ee07b0772196950230141579230.bindPopup(popup_da3c08b64235c2ecc769e2ff5886edb8)
+        ;
+
+        
+    
+    
+            marker_8db04ee07b0772196950230141579230.bindTooltip(
+                `<div>
+                     IndianOil
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ab43e344e7893de6ac0d1a926208821a = L.marker(
+                [23.401058, 85.242851],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_51c2ec8f53abeecd9050c231d343c66f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_ab43e344e7893de6ac0d1a926208821a.setIcon(icon_51c2ec8f53abeecd9050c231d343c66f);
+        
+    
+        var popup_17e1a9668caf88637d185a336943f1b5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c827d1c57ffa337483fef11e497e0e81 = $(`<div id="html_c827d1c57ffa337483fef11e497e0e81" style="width: 100.0%; height: 100.0%;"><b>IndianOil</b><br>Petrol Pump<br>At Tiltap S, near Ranchi Road, Ratu, Simlia, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJxUQ2W_Df9DkRMike90ifTik</div>`)[0];
+                popup_17e1a9668caf88637d185a336943f1b5.setContent(html_c827d1c57ffa337483fef11e497e0e81);
+            
+        
+
+        marker_ab43e344e7893de6ac0d1a926208821a.bindPopup(popup_17e1a9668caf88637d185a336943f1b5)
+        ;
+
+        
+    
+    
+            marker_ab43e344e7893de6ac0d1a926208821a.bindTooltip(
+                `<div>
+                     IndianOil
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e9e5ca286a1bd8b1e6b6fd02feef73c7 = L.marker(
+                [23.362497, 85.2292372],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_0b755a63ac292bcca85266f91894b777 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e9e5ca286a1bd8b1e6b6fd02feef73c7.setIcon(icon_0b755a63ac292bcca85266f91894b777);
+        
+    
+        var popup_d2be4c9ceaf3150666e771b256d8c539 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_e79a7174afdec8a35627d45c25a13193 = $(`<div id="html_e79a7174afdec8a35627d45c25a13193" style="width: 100.0%; height: 100.0%;"><b>Bharat Petroleum, Petrol Pump -Kanchan Fuels</b><br>Petrol Pump<br>DALADAI CHOWK, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJrQagBInf9DkR5UThl5DMeNY</div>`)[0];
+                popup_d2be4c9ceaf3150666e771b256d8c539.setContent(html_e79a7174afdec8a35627d45c25a13193);
+            
+        
+
+        marker_e9e5ca286a1bd8b1e6b6fd02feef73c7.bindPopup(popup_d2be4c9ceaf3150666e771b256d8c539)
+        ;
+
+        
+    
+    
+            marker_e9e5ca286a1bd8b1e6b6fd02feef73c7.bindTooltip(
+                `<div>
+                     Bharat Petroleum, Petrol Pump -Kanchan Fuels
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_767b3bfea3fde076fedfc1c09b1a77b1 = L.marker(
+                [23.3267592, 85.1953541],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_999d3d064d090c2724dc4688cb6b61e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_767b3bfea3fde076fedfc1c09b1a77b1.setIcon(icon_999d3d064d090c2724dc4688cb6b61e3);
+        
+    
+        var popup_434a3e55bbbe0144c767d837d600debc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0c13a57ef940669b04bed1ec58f94010 = $(`<div id="html_0c13a57ef940669b04bed1ec58f94010" style="width: 100.0%; height: 100.0%;"><b>IndianOil</b><br>Petrol Pump<br>Ground Floor, Nagri, Naro<br>Status: OPERATIONAL<br>Place ID: ChIJi0Gh6bjf9DkRHk3ETJtFs_s</div>`)[0];
+                popup_434a3e55bbbe0144c767d837d600debc.setContent(html_0c13a57ef940669b04bed1ec58f94010);
+            
+        
+
+        marker_767b3bfea3fde076fedfc1c09b1a77b1.bindPopup(popup_434a3e55bbbe0144c767d837d600debc)
+        ;
+
+        
+    
+    
+            marker_767b3bfea3fde076fedfc1c09b1a77b1.bindTooltip(
+                `<div>
+                     IndianOil
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_954e4013e7a20fe24b0b6d75e215177b = L.marker(
+                [23.3981732, 85.3552627],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_712115a1fcbafe2e49da6bc8a8261bb1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_954e4013e7a20fe24b0b6d75e215177b.setIcon(icon_712115a1fcbafe2e49da6bc8a8261bb1);
+        
+    
+        var popup_f479aa2c7d50220db65e22aab8329d1d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a96b32e63047b4920168b777f2798cc7 = $(`<div id="html_a96b32e63047b4920168b777f2798cc7" style="width: 100.0%; height: 100.0%;"><b>IndianOil</b><br>Petrol Pump<br>Ground Floor, Bariatu Rd, Bariatu, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJPwXFqVzh9DkRfbjb6Bngxfc</div>`)[0];
+                popup_f479aa2c7d50220db65e22aab8329d1d.setContent(html_a96b32e63047b4920168b777f2798cc7);
+            
+        
+
+        marker_954e4013e7a20fe24b0b6d75e215177b.bindPopup(popup_f479aa2c7d50220db65e22aab8329d1d)
+        ;
+
+        
+    
+    
+            marker_954e4013e7a20fe24b0b6d75e215177b.bindTooltip(
+                `<div>
+                     IndianOil
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bc7676b1458df4e5e13a5cb497f64dbd = L.marker(
+                [23.3479309, 85.263361],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_0dc4967cfd61297873725d5214102eec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_bc7676b1458df4e5e13a5cb497f64dbd.setIcon(icon_0dc4967cfd61297873725d5214102eec);
+        
+    
+        var popup_d6ffd0371f044f5d3f05c16758b01e97 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_920693b8bab228d4d9b448a43aa8101d = $(`<div id="html_920693b8bab228d4d9b448a43aa8101d" style="width: 100.0%; height: 100.0%;"><b>IndianOil</b><br>Petrol Pump<br>At, S Nagri, Pundag, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJN82mLADf9DkRi-QGFerx5eM</div>`)[0];
+                popup_d6ffd0371f044f5d3f05c16758b01e97.setContent(html_920693b8bab228d4d9b448a43aa8101d);
+            
+        
+
+        marker_bc7676b1458df4e5e13a5cb497f64dbd.bindPopup(popup_d6ffd0371f044f5d3f05c16758b01e97)
+        ;
+
+        
+    
+    
+            marker_bc7676b1458df4e5e13a5cb497f64dbd.bindTooltip(
+                `<div>
+                     IndianOil
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6f71ef91a9059255ec2401a5cdc580f1 = L.marker(
+                [23.4177848, 85.3458234],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_3c147249fc2372e04d5dcd89ff64dfab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_6f71ef91a9059255ec2401a5cdc580f1.setIcon(icon_3c147249fc2372e04d5dcd89ff64dfab);
+        
+    
+        var popup_34e9b6de7c60ca25af822d4217261b66 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_f6e14f8f5cf40e41cac8acc20811952e = $(`<div id="html_f6e14f8f5cf40e41cac8acc20811952e" style="width: 100.0%; height: 100.0%;"><b>Bharat Petroleum, Petrol Pump -Manshai Fuel Station</b><br>Petrol Pump<br>DSTT, BOREYA, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJI_NHqY3n9DkRLmQYLIgDEZQ</div>`)[0];
+                popup_34e9b6de7c60ca25af822d4217261b66.setContent(html_f6e14f8f5cf40e41cac8acc20811952e);
+            
+        
+
+        marker_6f71ef91a9059255ec2401a5cdc580f1.bindPopup(popup_34e9b6de7c60ca25af822d4217261b66)
+        ;
+
+        
+    
+    
+            marker_6f71ef91a9059255ec2401a5cdc580f1.bindTooltip(
+                `<div>
+                     Bharat Petroleum, Petrol Pump -Manshai Fuel Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a04c767b5b8256538ae2d702cf82b058 = L.marker(
+                [23.3823899, 85.4190807],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_ff568fde860bc22e266780584895f726 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a04c767b5b8256538ae2d702cf82b058.setIcon(icon_ff568fde860bc22e266780584895f726);
+        
+    
+        var popup_7b2983009adf5ff597e6171e5c388f80 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_a549f759ad50292c566b18006786e273 = $(`<div id="html_a549f759ad50292c566b18006786e273" style="width: 100.0%; height: 100.0%;"><b>IndianOil</b><br>Petrol Pump<br>At, Pertol, Khelgaon, Lalganj, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJwb4NHQDj9DkRBAIq8B6gbv8</div>`)[0];
+                popup_7b2983009adf5ff597e6171e5c388f80.setContent(html_a549f759ad50292c566b18006786e273);
+            
+        
+
+        marker_a04c767b5b8256538ae2d702cf82b058.bindPopup(popup_7b2983009adf5ff597e6171e5c388f80)
+        ;
+
+        
+    
+    
+            marker_a04c767b5b8256538ae2d702cf82b058.bindTooltip(
+                `<div>
+                     IndianOil
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cdd7947d4c0c65fcb76e189b13cc2a81 = L.marker(
+                [23.4031103, 85.2509415],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_7443c5c8dc4634cd098b24a002c21edd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_cdd7947d4c0c65fcb76e189b13cc2a81.setIcon(icon_7443c5c8dc4634cd098b24a002c21edd);
+        
+    
+        var popup_8498dc58b303252a0b86757d328bb4f1 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_59c9a856038bae14c8f4b3b17b0ed037 = $(`<div id="html_59c9a856038bae14c8f4b3b17b0ed037" style="width: 100.0%; height: 100.0%;"><b>IndianOil</b><br>Petrol Pump<br>Ground Floor, Bijjulia, Pandra, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJD6rXKHXe9DkR9q5IVRtMR2A</div>`)[0];
+                popup_8498dc58b303252a0b86757d328bb4f1.setContent(html_59c9a856038bae14c8f4b3b17b0ed037);
+            
+        
+
+        marker_cdd7947d4c0c65fcb76e189b13cc2a81.bindPopup(popup_8498dc58b303252a0b86757d328bb4f1)
+        ;
+
+        
+    
+    
+            marker_cdd7947d4c0c65fcb76e189b13cc2a81.bindTooltip(
+                `<div>
+                     IndianOil
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_984ad9feae89989c2fceb3237f151604 = L.marker(
+                [23.3658624, 85.3429238],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_95e7e50f2fbd10bf88e352c20258e4d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_984ad9feae89989c2fceb3237f151604.setIcon(icon_95e7e50f2fbd10bf88e352c20258e4d2);
+        
+    
+        var popup_73b0b5052782bab111309c9afb9754be = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_371d84fb36e5b737ba6c2c48253c73f7 = $(`<div id="html_371d84fb36e5b737ba6c2c48253c73f7" style="width: 100.0%; height: 100.0%;"><b>IndianOil</b><br>Petrol Pump<br>Purulia Rd, Dangartoli, Nayatoli, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJBRSp3Sri9DkRc6kA7rmERzM</div>`)[0];
+                popup_73b0b5052782bab111309c9afb9754be.setContent(html_371d84fb36e5b737ba6c2c48253c73f7);
+            
+        
+
+        marker_984ad9feae89989c2fceb3237f151604.bindPopup(popup_73b0b5052782bab111309c9afb9754be)
+        ;
+
+        
+    
+    
+            marker_984ad9feae89989c2fceb3237f151604.bindTooltip(
+                `<div>
+                     IndianOil
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9679677d82ead6387e550b34436b8f4c = L.marker(
+                [23.3499107, 85.22972879999999],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_655c3a3f39c727a289fe2dd14ad59999 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9679677d82ead6387e550b34436b8f4c.setIcon(icon_655c3a3f39c727a289fe2dd14ad59999);
+        
+    
+        var popup_136ad7d3f0f066261cbb1dab3e426998 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5d1d9ce44650c4908934aa1896470999 = $(`<div id="html_5d1d9ce44650c4908934aa1896470999" style="width: 100.0%; height: 100.0%;"><b>IndianOil</b><br>Petrol Pump<br>Ground Floor, NH-23, Supram, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJl36lawff9DkROZhyXNpyegM</div>`)[0];
+                popup_136ad7d3f0f066261cbb1dab3e426998.setContent(html_5d1d9ce44650c4908934aa1896470999);
+            
+        
+
+        marker_9679677d82ead6387e550b34436b8f4c.bindPopup(popup_136ad7d3f0f066261cbb1dab3e426998)
+        ;
+
+        
+    
+    
+            marker_9679677d82ead6387e550b34436b8f4c.bindTooltip(
+                `<div>
+                     IndianOil
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_237d9f7af7cd618c8f171341de7c9fb9 = L.marker(
+                [23.279096, 85.4152081],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_b0b3d38a0ccbb38103ac5ff3a31468f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_237d9f7af7cd618c8f171341de7c9fb9.setIcon(icon_b0b3d38a0ccbb38103ac5ff3a31468f2);
+        
+    
+        var popup_2c2431484d853b539e49faef0fc8ecf5 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3478f3a5187a13c7f0b1465849473e16 = $(`<div id="html_3478f3a5187a13c7f0b1465849473e16" style="width: 100.0%; height: 100.0%;"><b>IndianOil</b><br>Petrol Pump<br>Ground Floor Garke, Namkum, Rampur, Bara Ghaghra, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJF_xXJRgd9TkRFPCypkB2nAk</div>`)[0];
+                popup_2c2431484d853b539e49faef0fc8ecf5.setContent(html_3478f3a5187a13c7f0b1465849473e16);
+            
+        
+
+        marker_237d9f7af7cd618c8f171341de7c9fb9.bindPopup(popup_2c2431484d853b539e49faef0fc8ecf5)
+        ;
+
+        
+    
+    
+            marker_237d9f7af7cd618c8f171341de7c9fb9.bindTooltip(
+                `<div>
+                     IndianOil
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f9a2bdcc79d6d4c0f368b9c58dcfa3b4 = L.marker(
+                [23.3760625, 85.3518125],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_edf3a63ca0367418b849df1bc70a9693 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f9a2bdcc79d6d4c0f368b9c58dcfa3b4.setIcon(icon_edf3a63ca0367418b849df1bc70a9693);
+        
+    
+        var popup_5704a44df76b626894932f3c9ec05627 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1334bbc657a6e856957c7949016191e5 = $(`<div id="html_1334bbc657a6e856957c7949016191e5" style="width: 100.0%; height: 100.0%;"><b>Diamond sales</b><br>Petrol Pump<br>Bazar, Kokar Industrial Area, Kokar, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJ3S0WXbTh9DkR4a4_Ay0Nzrs</div>`)[0];
+                popup_5704a44df76b626894932f3c9ec05627.setContent(html_1334bbc657a6e856957c7949016191e5);
+            
+        
+
+        marker_f9a2bdcc79d6d4c0f368b9c58dcfa3b4.bindPopup(popup_5704a44df76b626894932f3c9ec05627)
+        ;
+
+        
+    
+    
+            marker_f9a2bdcc79d6d4c0f368b9c58dcfa3b4.bindTooltip(
+                `<div>
+                     Diamond sales
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_28edd619eb6b6d7fc75e915e2c29a810 = L.marker(
+                [23.393992, 85.2669696],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_ae32076611ef6973550ea65085e18d73 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_28edd619eb6b6d7fc75e915e2c29a810.setIcon(icon_ae32076611ef6973550ea65085e18d73);
+        
+    
+        var popup_7dbdcef31158296b82ae0f3f238857cc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8b201d394133169241d42e890f3fdafa = $(`<div id="html_8b201d394133169241d42e890f3fdafa" style="width: 100.0%; height: 100.0%;"><b>IndianOil</b><br>Petrol Pump<br>JAYASWAL PETROL PUMP, C/O, Ratu Rd, Ravi Steel, Ranchi, Kamre<br>Status: OPERATIONAL<br>Place ID: ChIJhz1ECeHg9DkRhtDSIXtkGbU</div>`)[0];
+                popup_7dbdcef31158296b82ae0f3f238857cc.setContent(html_8b201d394133169241d42e890f3fdafa);
+            
+        
+
+        marker_28edd619eb6b6d7fc75e915e2c29a810.bindPopup(popup_7dbdcef31158296b82ae0f3f238857cc)
+        ;
+
+        
+    
+    
+            marker_28edd619eb6b6d7fc75e915e2c29a810.bindTooltip(
+                `<div>
+                     IndianOil
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d16392394f2b852f161b1e0da6381b7f = L.marker(
+                [23.3818866, 85.296363],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_a245903882bcd24fe3fb01b899d70f3f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d16392394f2b852f161b1e0da6381b7f.setIcon(icon_a245903882bcd24fe3fb01b899d70f3f);
+        
+    
+        var popup_f0f172ead8f46c31ff6af180127e63ba = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b2c1002b39e95e01fe13b93575522c9e = $(`<div id="html_b2c1002b39e95e01fe13b93575522c9e" style="width: 100.0%; height: 100.0%;"><b>Hindustan Petroleum Corporation Limited</b><br>Petrol Pump<br>Ground Floor, Piska More, Hehal, Pahartoli, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJOf7Zaerg9DkRKMd_l_aEu9k</div>`)[0];
+                popup_f0f172ead8f46c31ff6af180127e63ba.setContent(html_b2c1002b39e95e01fe13b93575522c9e);
+            
+        
+
+        marker_d16392394f2b852f161b1e0da6381b7f.bindPopup(popup_f0f172ead8f46c31ff6af180127e63ba)
+        ;
+
+        
+    
+    
+            marker_d16392394f2b852f161b1e0da6381b7f.bindTooltip(
+                `<div>
+                     Hindustan Petroleum Corporation Limited
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2ffc5829442eb77c8ef56304c2dd6885 = L.marker(
+                [23.3593454, 85.42211789999999],
+                {}
+            ).addTo(marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb);
+        
+    
+            var icon_ade2a1e8dfa23d86fcc4485f943491b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "tint", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2ffc5829442eb77c8ef56304c2dd6885.setIcon(icon_ade2a1e8dfa23d86fcc4485f943491b0);
+        
+    
+        var popup_8f4c362a3b37f8e1306f09c75d3a5838 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_00a168b18cd64ee0653b5ce2511eac56 = $(`<div id="html_00a168b18cd64ee0653b5ce2511eac56" style="width: 100.0%; height: 100.0%;"><b>Hindustan Petroleum Corporation Limited</b><br>Petrol Pump<br>Ground Floor, Mahilong, Tatisilwai, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJ774oM9ni9DkRlxQQXw2Y4y0</div>`)[0];
+                popup_8f4c362a3b37f8e1306f09c75d3a5838.setContent(html_00a168b18cd64ee0653b5ce2511eac56);
+            
+        
+
+        marker_2ffc5829442eb77c8ef56304c2dd6885.bindPopup(popup_8f4c362a3b37f8e1306f09c75d3a5838)
+        ;
+
+        
+    
+    
+            marker_2ffc5829442eb77c8ef56304c2dd6885.bindTooltip(
+                `<div>
+                     Hindustan Petroleum Corporation Limited
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb.addTo(map_8d987bb147a745c3e3f09b5b7bc32225);
+        
+    
+            var marker_cluster_b2ff2e342f1a331e37ffda45050c7511 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_3900ef127b42ae033ca1961e0b6d07bc = L.marker(
+                [23.3718669, 85.3261236],
+                {}
+            ).addTo(marker_cluster_b2ff2e342f1a331e37ffda45050c7511);
+        
+    
+            var icon_849e8a9b273e5fd3f5d0f31bd782bf5c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_3900ef127b42ae033ca1961e0b6d07bc.setIcon(icon_849e8a9b273e5fd3f5d0f31bd782bf5c);
+        
+    
+        var popup_050f813de42e2a41e7906895eb72c1c8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_47af50985876119afe355e9182271073 = $(`<div id="html_47af50985876119afe355e9182271073" style="width: 100.0%; height: 100.0%;"><b>Tata Power Charging Station</b><br>EV Charging Station<br>98CG+PCX, Near Firayalals Pulsar Plaza, Line Tank Rd, Gopal Gunj, Deputy Para, Ahirtoli, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJl05H0Q_h9DkR7ayb-emtdro</div>`)[0];
+                popup_050f813de42e2a41e7906895eb72c1c8.setContent(html_47af50985876119afe355e9182271073);
+            
+        
+
+        marker_3900ef127b42ae033ca1961e0b6d07bc.bindPopup(popup_050f813de42e2a41e7906895eb72c1c8)
+        ;
+
+        
+    
+    
+            marker_3900ef127b42ae033ca1961e0b6d07bc.bindTooltip(
+                `<div>
+                     Tata Power Charging Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6138969dcab4e87a82c7c1fbe90b35f3 = L.marker(
+                [23.383625, 85.290161],
+                {}
+            ).addTo(marker_cluster_b2ff2e342f1a331e37ffda45050c7511);
+        
+    
+            var icon_381bdd8a4e5b39473b88e92e5c7257f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_6138969dcab4e87a82c7c1fbe90b35f3.setIcon(icon_381bdd8a4e5b39473b88e92e5c7257f1);
+        
+    
+        var popup_a260f3cbcaed2593c5e8ff7c4304c535 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4bc0f7d59d73ad9ff6b22ed405a5cde9 = $(`<div id="html_4bc0f7d59d73ad9ff6b22ed405a5cde9" style="width: 100.0%; height: 100.0%;"><b>Statiq Charging Station</b><br>EV Charging Station<br>74A & 74B, Road, inside The Showroom, Mo, Pahartoli, Piska, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJUWJaLL7g9DkR9GFq1O1cbfs</div>`)[0];
+                popup_a260f3cbcaed2593c5e8ff7c4304c535.setContent(html_4bc0f7d59d73ad9ff6b22ed405a5cde9);
+            
+        
+
+        marker_6138969dcab4e87a82c7c1fbe90b35f3.bindPopup(popup_a260f3cbcaed2593c5e8ff7c4304c535)
+        ;
+
+        
+    
+    
+            marker_6138969dcab4e87a82c7c1fbe90b35f3.bindTooltip(
+                `<div>
+                     Statiq Charging Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_74a601f34a879e4c6458988efa728d66 = L.marker(
+                [23.378019, 85.31480599999999],
+                {}
+            ).addTo(marker_cluster_b2ff2e342f1a331e37ffda45050c7511);
+        
+    
+            var icon_56b4cf9b955328ca22507f281f7d57ff = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_74a601f34a879e4c6458988efa728d66.setIcon(icon_56b4cf9b955328ca22507f281f7d57ff);
+        
+    
+        var popup_1beb35b3e1cfb51cfc12c708fd3b90a8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5bc24ce4ee9f91a4cfe8d536f05f3896 = $(`<div id="html_5bc24ce4ee9f91a4cfe8d536f05f3896" style="width: 100.0%; height: 100.0%;"><b>Tata Power EZ Charge Charging Station</b><br>EV Charging Station<br>Mall Of Ranchi, Ratu Rd, opp. Akashwani 304, near New Market Chowk, Kumhartoli, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJ6_DsCh7h9DkRRpyx4GdKIgM</div>`)[0];
+                popup_1beb35b3e1cfb51cfc12c708fd3b90a8.setContent(html_5bc24ce4ee9f91a4cfe8d536f05f3896);
+            
+        
+
+        marker_74a601f34a879e4c6458988efa728d66.bindPopup(popup_1beb35b3e1cfb51cfc12c708fd3b90a8)
+        ;
+
+        
+    
+    
+            marker_74a601f34a879e4c6458988efa728d66.bindTooltip(
+                `<div>
+                     Tata Power EZ Charge Charging Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_763c3476da61a80d08172b09fe2707af = L.marker(
+                [23.2814203, 85.4142571],
+                {}
+            ).addTo(marker_cluster_b2ff2e342f1a331e37ffda45050c7511);
+        
+    
+            var icon_96f90f3bd76b88d06eeffd4c2b2e5fa2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_763c3476da61a80d08172b09fe2707af.setIcon(icon_96f90f3bd76b88d06eeffd4c2b2e5fa2);
+        
+    
+        var popup_93a33dac26480c5398f9cc4d0000e4ee = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_d3e1be867f50e791f62b1cfabb575929 = $(`<div id="html_d3e1be867f50e791f62b1cfabb575929" style="width: 100.0%; height: 100.0%;"><b>BPCL Charging Station</b><br>EV Charging Station<br>7CJ7+HP6, Ranchi, Ganrke<br>Status: OPERATIONAL<br>Place ID: ChIJ7dffdBcd9TkRQy1s53X6tFA</div>`)[0];
+                popup_93a33dac26480c5398f9cc4d0000e4ee.setContent(html_d3e1be867f50e791f62b1cfabb575929);
+            
+        
+
+        marker_763c3476da61a80d08172b09fe2707af.bindPopup(popup_93a33dac26480c5398f9cc4d0000e4ee)
+        ;
+
+        
+    
+    
+            marker_763c3476da61a80d08172b09fe2707af.bindTooltip(
+                `<div>
+                     BPCL Charging Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f8fe168abae5cee06a789b1028c7427c = L.marker(
+                [23.304501, 85.288535],
+                {}
+            ).addTo(marker_cluster_b2ff2e342f1a331e37ffda45050c7511);
+        
+    
+            var icon_29436dc25292478a1fac8254b83388dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f8fe168abae5cee06a789b1028c7427c.setIcon(icon_29436dc25292478a1fac8254b83388dd);
+        
+    
+        var popup_2ed5bfe9bb0016d6954f3babfdb27981 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_3a64bf5170967a7e1fc56e0aa2db2f18 = $(`<div id="html_3a64bf5170967a7e1fc56e0aa2db2f18" style="width: 100.0%; height: 100.0%;"><b>BPCL Charging Station</b><br>EV Charging Station<br>873Q+RC3 RO AT, 3, CTI Colony, Sector 4, Dhurwa, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJ5-APveYf9TkRu0acQX_KV94</div>`)[0];
+                popup_2ed5bfe9bb0016d6954f3babfdb27981.setContent(html_3a64bf5170967a7e1fc56e0aa2db2f18);
+            
+        
+
+        marker_f8fe168abae5cee06a789b1028c7427c.bindPopup(popup_2ed5bfe9bb0016d6954f3babfdb27981)
+        ;
+
+        
+    
+    
+            marker_f8fe168abae5cee06a789b1028c7427c.bindTooltip(
+                `<div>
+                     BPCL Charging Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8d567f4c31f478fa0eaf385eb26aa27c = L.marker(
+                [23.365018, 85.310762],
+                {}
+            ).addTo(marker_cluster_b2ff2e342f1a331e37ffda45050c7511);
+        
+    
+            var icon_e8746d2b2af656a8c5ea46e150336541 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_8d567f4c31f478fa0eaf385eb26aa27c.setIcon(icon_e8746d2b2af656a8c5ea46e150336541);
+        
+    
+        var popup_ddef021d93987af2a56713770b7675d7 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_5bb6671d3ecb67ad51c83060305fd342 = $(`<div id="html_5bb6671d3ecb67ad51c83060305fd342" style="width: 100.0%; height: 100.0%;"><b>Tata Power Charging Station</b><br>EV Charging Station<br>Express Residency Private Limited, 55, Baralal St, Upper Bazar, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJ8UjaiP7g9DkR3nE3QBvhVwc</div>`)[0];
+                popup_ddef021d93987af2a56713770b7675d7.setContent(html_5bb6671d3ecb67ad51c83060305fd342);
+            
+        
+
+        marker_8d567f4c31f478fa0eaf385eb26aa27c.bindPopup(popup_ddef021d93987af2a56713770b7675d7)
+        ;
+
+        
+    
+    
+            marker_8d567f4c31f478fa0eaf385eb26aa27c.bindTooltip(
+                `<div>
+                     Tata Power Charging Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ade161458151bab7643c401d95a1e23a = L.marker(
+                [23.3476159, 85.2809094],
+                {}
+            ).addTo(marker_cluster_b2ff2e342f1a331e37ffda45050c7511);
+        
+    
+            var icon_13e0084b05e5a1ae7e161fd3cd830a21 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ade161458151bab7643c401d95a1e23a.setIcon(icon_13e0084b05e5a1ae7e161fd3cd830a21);
+        
+    
+        var popup_23e79099f154c7a8e7a174b7d2c7029b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_73b98824fab5f15ed87a4c696ab17da9 = $(`<div id="html_73b98824fab5f15ed87a4c696ab17da9" style="width: 100.0%; height: 100.0%;"><b>Electric Vehicle Charging Station</b><br>EV Charging Station<br>87XJ+29V, Pundag, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJv_tWcADh9DkRPYT1nmB5kzU</div>`)[0];
+                popup_23e79099f154c7a8e7a174b7d2c7029b.setContent(html_73b98824fab5f15ed87a4c696ab17da9);
+            
+        
+
+        marker_ade161458151bab7643c401d95a1e23a.bindPopup(popup_23e79099f154c7a8e7a174b7d2c7029b)
+        ;
+
+        
+    
+    
+            marker_ade161458151bab7643c401d95a1e23a.bindTooltip(
+                `<div>
+                     Electric Vehicle Charging Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6090e4e61308866e6044c55a729bda24 = L.marker(
+                [23.3872996, 85.33611309999999],
+                {}
+            ).addTo(marker_cluster_b2ff2e342f1a331e37ffda45050c7511);
+        
+    
+            var icon_1d0eab97084b958ea27ae99e4b78c81f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_6090e4e61308866e6044c55a729bda24.setIcon(icon_1d0eab97084b958ea27ae99e4b78c81f);
+        
+    
+        var popup_6b5b9c7dacdce221258885e7f4e1fb08 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_8f72f0eb510ab60df78852e37ab04d33 = $(`<div id="html_8f72f0eb510ab60df78852e37ab04d33" style="width: 100.0%; height: 100.0%;"><b>Ather Grid Charging Station</b><br>EV Charging Station<br>Indane Opp. Road, Karam Toli Chowk, near Bariatu Road, Karamtoli, M.V, Car, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJ4fMwc_7h9DkR5ezM43KP3lI</div>`)[0];
+                popup_6b5b9c7dacdce221258885e7f4e1fb08.setContent(html_8f72f0eb510ab60df78852e37ab04d33);
+            
+        
+
+        marker_6090e4e61308866e6044c55a729bda24.bindPopup(popup_6b5b9c7dacdce221258885e7f4e1fb08)
+        ;
+
+        
+    
+    
+            marker_6090e4e61308866e6044c55a729bda24.bindTooltip(
+                `<div>
+                     Ather Grid Charging Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_87cb7a636e0bb371f43228f3f2ce8ef9 = L.marker(
+                [23.371302, 85.350737],
+                {}
+            ).addTo(marker_cluster_b2ff2e342f1a331e37ffda45050c7511);
+        
+    
+            var icon_2dfec0743476102c97e82550f9e00bc6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_87cb7a636e0bb371f43228f3f2ce8ef9.setIcon(icon_2dfec0743476102c97e82550f9e00bc6);
+        
+    
+        var popup_e1eb670936b3b708e38c3a593325cd86 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_99c474ee55d57328a42ccc633e949755 = $(`<div id="html_99c474ee55d57328a42ccc633e949755" style="width: 100.0%; height: 100.0%;"><b>Tata Power Charging Station</b><br>EV Charging Station<br>99C2+G7H Basudeb Auto, Kokar Industrial Area, Shanti Nagar, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJu4KZlnzh9DkRuaXSwtvS8g8</div>`)[0];
+                popup_e1eb670936b3b708e38c3a593325cd86.setContent(html_99c474ee55d57328a42ccc633e949755);
+            
+        
+
+        marker_87cb7a636e0bb371f43228f3f2ce8ef9.bindPopup(popup_e1eb670936b3b708e38c3a593325cd86)
+        ;
+
+        
+    
+    
+            marker_87cb7a636e0bb371f43228f3f2ce8ef9.bindTooltip(
+                `<div>
+                     Tata Power Charging Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_09c9f74055662b4a6ca23f7aa787b3ec = L.marker(
+                [23.3852133, 85.28716],
+                {}
+            ).addTo(marker_cluster_b2ff2e342f1a331e37ffda45050c7511);
+        
+    
+            var icon_90eb2080e79fa0301a39f9a04deba076 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_09c9f74055662b4a6ca23f7aa787b3ec.setIcon(icon_90eb2080e79fa0301a39f9a04deba076);
+        
+    
+        var popup_fafe6bf73397776b748deef5a5798ccd = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_88921987a61e0d27039a008f29a0b343 = $(`<div id="html_88921987a61e0d27039a008f29a0b343" style="width: 100.0%; height: 100.0%;"><b>Electric Vehicle Charging Station</b><br>EV Charging Station<br>97PP+3VM, Shahdeo Nagar, Panchsheel Colony, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJww3nCgDh9DkRkcf591VEwRA</div>`)[0];
+                popup_fafe6bf73397776b748deef5a5798ccd.setContent(html_88921987a61e0d27039a008f29a0b343);
+            
+        
+
+        marker_09c9f74055662b4a6ca23f7aa787b3ec.bindPopup(popup_fafe6bf73397776b748deef5a5798ccd)
+        ;
+
+        
+    
+    
+            marker_09c9f74055662b4a6ca23f7aa787b3ec.bindTooltip(
+                `<div>
+                     Electric Vehicle Charging Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_19acb6e2dafcc2adddd0435d1babcb20 = L.marker(
+                [23.3477097, 85.2811219],
+                {}
+            ).addTo(marker_cluster_b2ff2e342f1a331e37ffda45050c7511);
+        
+    
+            var icon_b26dd70342ad24a56f5973377662f60f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_19acb6e2dafcc2adddd0435d1babcb20.setIcon(icon_b26dd70342ad24a56f5973377662f60f);
+        
+    
+        var popup_9354043c46503f3db2c55b256112e004 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_41d1aee7cef8da291b39fc4e32a6e8b7 = $(`<div id="html_41d1aee7cef8da291b39fc4e32a6e8b7" style="width: 100.0%; height: 100.0%;"><b>Kia Charging Station</b><br>EV Charging Station<br>Khata No 21, Horizon Cars LLPRS, Plot No 3985, Pundag Rd, Pundag, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJl5oLFUzg9DkRFjtEB8AfZCs</div>`)[0];
+                popup_9354043c46503f3db2c55b256112e004.setContent(html_41d1aee7cef8da291b39fc4e32a6e8b7);
+            
+        
+
+        marker_19acb6e2dafcc2adddd0435d1babcb20.bindPopup(popup_9354043c46503f3db2c55b256112e004)
+        ;
+
+        
+    
+    
+            marker_19acb6e2dafcc2adddd0435d1babcb20.bindTooltip(
+                `<div>
+                     Kia Charging Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0e4de4569ffd25f0e5a409c299230ea7 = L.marker(
+                [23.3585189, 85.30865519999999],
+                {}
+            ).addTo(marker_cluster_b2ff2e342f1a331e37ffda45050c7511);
+        
+    
+            var icon_f39e3f0344e8c385b08de5bb570a162f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_0e4de4569ffd25f0e5a409c299230ea7.setIcon(icon_f39e3f0344e8c385b08de5bb570a162f);
+        
+    
+        var popup_5036a5b2706257c79009c1648af1041f = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_48827c97c9323d762bd393bf4d5319a6 = $(`<div id="html_48827c97c9323d762bd393bf4d5319a6" style="width: 100.0%; height: 100.0%;"><b>Ather Grid Charging Station</b><br>EV Charging Station<br>Sahajanand Chowk, Plot No H-117, Harmu Housing Colony, P.S, Argora, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJkUIX4FXg9DkRhzelMrrJb0M</div>`)[0];
+                popup_5036a5b2706257c79009c1648af1041f.setContent(html_48827c97c9323d762bd393bf4d5319a6);
+            
+        
+
+        marker_0e4de4569ffd25f0e5a409c299230ea7.bindPopup(popup_5036a5b2706257c79009c1648af1041f)
+        ;
+
+        
+    
+    
+            marker_0e4de4569ffd25f0e5a409c299230ea7.bindTooltip(
+                `<div>
+                     Ather Grid Charging Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_946d24b65d63410ac755f8eb508c6327 = L.marker(
+                [23.3526794, 85.298733],
+                {}
+            ).addTo(marker_cluster_b2ff2e342f1a331e37ffda45050c7511);
+        
+    
+            var icon_2924664d2ffb01a96514fcd37fa302ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_946d24b65d63410ac755f8eb508c6327.setIcon(icon_2924664d2ffb01a96514fcd37fa302ac);
+        
+    
+        var popup_6436db6d7ecffa1dd136fdb52b88238b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4f85965140478f3b300f63e727f04529 = $(`<div id="html_4f85965140478f3b300f63e727f04529" style="width: 100.0%; height: 100.0%;"><b>Ather charging station</b><br>EV Charging Station<br>972X+WCM, Harmu Housing Colony, Argora, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJj2OZcQDh9DkRXX20ke_69Zk</div>`)[0];
+                popup_6436db6d7ecffa1dd136fdb52b88238b.setContent(html_4f85965140478f3b300f63e727f04529);
+            
+        
+
+        marker_946d24b65d63410ac755f8eb508c6327.bindPopup(popup_6436db6d7ecffa1dd136fdb52b88238b)
+        ;
+
+        
+    
+    
+            marker_946d24b65d63410ac755f8eb508c6327.bindTooltip(
+                `<div>
+                     Ather charging station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_70276b56dc7ca6439a691579776b3e4f = L.marker(
+                [23.309814, 85.31707],
+                {}
+            ).addTo(marker_cluster_b2ff2e342f1a331e37ffda45050c7511);
+        
+    
+            var icon_25e5f6873fd6321881f4eadf4436c3bd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_70276b56dc7ca6439a691579776b3e4f.setIcon(icon_25e5f6873fd6321881f4eadf4436c3bd);
+        
+    
+        var popup_f17f83843bf84f7c0d170656b19ddbfe = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4440b880500cf13a1499aa311d4a3fd5 = $(`<div id="html_4440b880500cf13a1499aa311d4a3fd5" style="width: 100.0%; height: 100.0%;"><b>Ather Grid Charging Station</b><br>EV Charging Station<br>oppo hp petrol pump, Royal heights, mahara toli, near Hatia Main Road, Singh More, Maharatoli, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJfeDxTCoe9TkR0oNM196lXaA</div>`)[0];
+                popup_f17f83843bf84f7c0d170656b19ddbfe.setContent(html_4440b880500cf13a1499aa311d4a3fd5);
+            
+        
+
+        marker_70276b56dc7ca6439a691579776b3e4f.bindPopup(popup_f17f83843bf84f7c0d170656b19ddbfe)
+        ;
+
+        
+    
+    
+            marker_70276b56dc7ca6439a691579776b3e4f.bindTooltip(
+                `<div>
+                     Ather Grid Charging Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a25f8e5f7552bd47d78742eba9fb1350 = L.marker(
+                [23.4126181, 85.403089],
+                {}
+            ).addTo(marker_cluster_b2ff2e342f1a331e37ffda45050c7511);
+        
+    
+            var icon_ae52c17e96d4d4e103ca40b6a09797aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_a25f8e5f7552bd47d78742eba9fb1350.setIcon(icon_ae52c17e96d4d4e103ca40b6a09797aa);
+        
+    
+        var popup_a4261f42cf2e9cd93609f84a9cfab451 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_65adf4cbaec16277c89da30c0c365176 = $(`<div id="html_65adf4cbaec16277c89da30c0c365176" style="width: 100.0%; height: 100.0%;"><b>Ather Grid Charging Station</b><br>EV Charging Station<br>Jungli Restaurant, Nandshila, Hazaribagh Rd, near Jumar Bridge<br>Status: OPERATIONAL<br>Place ID: ChIJHztMD4Dl9DkR-x3R0tUOX7k</div>`)[0];
+                popup_a4261f42cf2e9cd93609f84a9cfab451.setContent(html_65adf4cbaec16277c89da30c0c365176);
+            
+        
+
+        marker_a25f8e5f7552bd47d78742eba9fb1350.bindPopup(popup_a4261f42cf2e9cd93609f84a9cfab451)
+        ;
+
+        
+    
+    
+            marker_a25f8e5f7552bd47d78742eba9fb1350.bindTooltip(
+                `<div>
+                     Ather Grid Charging Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3e71b1312640dda395b52ba5226de4e9 = L.marker(
+                [23.3621798, 85.3069302],
+                {}
+            ).addTo(marker_cluster_b2ff2e342f1a331e37ffda45050c7511);
+        
+    
+            var icon_258cd659429777f1b872e60d08fa3ec6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_3e71b1312640dda395b52ba5226de4e9.setIcon(icon_258cd659429777f1b872e60d08fa3ec6);
+        
+    
+        var popup_fca4a1b9c6f3222a1f3f2714a5a30c21 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_050dec6634d3fdb22591828c1d25086d = $(`<div id="html_050dec6634d3fdb22591828c1d25086d" style="width: 100.0%; height: 100.0%;"><b>Ather Grid Charging Station</b><br>EV Charging Station<br>9864+VQ8, imli chowk, near apna super mart trust Multispeciality Hospital, Harmu Housing Colony, Harmu, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJdaclHfng9DkRAtArVTVaOF0</div>`)[0];
+                popup_fca4a1b9c6f3222a1f3f2714a5a30c21.setContent(html_050dec6634d3fdb22591828c1d25086d);
+            
+        
+
+        marker_3e71b1312640dda395b52ba5226de4e9.bindPopup(popup_fca4a1b9c6f3222a1f3f2714a5a30c21)
+        ;
+
+        
+    
+    
+            marker_3e71b1312640dda395b52ba5226de4e9.bindTooltip(
+                `<div>
+                     Ather Grid Charging Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7fb26673f159a6b80f3185561bf78ef6 = L.marker(
+                [23.2905236, 85.2367606],
+                {}
+            ).addTo(marker_cluster_b2ff2e342f1a331e37ffda45050c7511);
+        
+    
+            var icon_d69638e04c1d70b9106926676b7454f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_7fb26673f159a6b80f3185561bf78ef6.setIcon(icon_d69638e04c1d70b9106926676b7454f8);
+        
+    
+        var popup_1be019578dac61adfed71cc1a99c54cf = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_1adf1c050983c734557cfef09482a5d3 = $(`<div id="html_1adf1c050983c734557cfef09482a5d3" style="width: 100.0%; height: 100.0%;"><b>Ather Grid Charging Station</b><br>EV Charging Station<br>76RP+6P2 SMOKER'S CAFE AND RESTAURANT, Sembo, Ranchi Ring Rd, near crpf camp, Dhurwa, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJWZ0Kjywh9TkRDDhh_tk-jPk</div>`)[0];
+                popup_1be019578dac61adfed71cc1a99c54cf.setContent(html_1adf1c050983c734557cfef09482a5d3);
+            
+        
+
+        marker_7fb26673f159a6b80f3185561bf78ef6.bindPopup(popup_1be019578dac61adfed71cc1a99c54cf)
+        ;
+
+        
+    
+    
+            marker_7fb26673f159a6b80f3185561bf78ef6.bindTooltip(
+                `<div>
+                     Ather Grid Charging Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3b651123ec3b58541e7a57c6ce7f4433 = L.marker(
+                [23.3710728, 85.31375729999999],
+                {}
+            ).addTo(marker_cluster_b2ff2e342f1a331e37ffda45050c7511);
+        
+    
+            var icon_1b9a3819c10e2d4d85aca5cea9a192fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_3b651123ec3b58541e7a57c6ce7f4433.setIcon(icon_1b9a3819c10e2d4d85aca5cea9a192fc);
+        
+    
+        var popup_edd9f6bb55d3c6d3c5ddf06c3a913ac4 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_735650adc81a70028a98184a45a83ae8 = $(`<div id="html_735650adc81a70028a98184a45a83ae8" style="width: 100.0%; height: 100.0%;"><b>Ather Grid Charging Station</b><br>EV Charging Station<br>98C7+CFH, Agrasen Path, Upper Bazar, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJUWKwpwLh9DkRlbxeA8_XsOM</div>`)[0];
+                popup_edd9f6bb55d3c6d3c5ddf06c3a913ac4.setContent(html_735650adc81a70028a98184a45a83ae8);
+            
+        
+
+        marker_3b651123ec3b58541e7a57c6ce7f4433.bindPopup(popup_edd9f6bb55d3c6d3c5ddf06c3a913ac4)
+        ;
+
+        
+    
+    
+            marker_3b651123ec3b58541e7a57c6ce7f4433.bindTooltip(
+                `<div>
+                     Ather Grid Charging Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_67b5a77a278b63bc441e8da29d748cde = L.marker(
+                [23.3730773, 85.3509302],
+                {}
+            ).addTo(marker_cluster_b2ff2e342f1a331e37ffda45050c7511);
+        
+    
+            var icon_4373fc3c4e70c94d64bba7f23eb520d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_67b5a77a278b63bc441e8da29d748cde.setIcon(icon_4373fc3c4e70c94d64bba7f23eb520d5);
+        
+    
+        var popup_116f89f247488a1f66568c379563fb0e = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_4dea2bad2af12b2d438649ae7be1085d = $(`<div id="html_4dea2bad2af12b2d438649ae7be1085d" style="width: 100.0%; height: 100.0%;"><b>Tata Power Charging Station</b><br>EV Charging Station<br>14p, Next To Prabhat Khabar, 11, Kokar Industrial Area, Shanti Nagar, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJe87XSmPh9DkRdEORdpuUo5g</div>`)[0];
+                popup_116f89f247488a1f66568c379563fb0e.setContent(html_4dea2bad2af12b2d438649ae7be1085d);
+            
+        
+
+        marker_67b5a77a278b63bc441e8da29d748cde.bindPopup(popup_116f89f247488a1f66568c379563fb0e)
+        ;
+
+        
+    
+    
+            marker_67b5a77a278b63bc441e8da29d748cde.bindTooltip(
+                `<div>
+                     Tata Power Charging Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8cc3f78e13eaa2f92e80fc6988aa24e9 = L.marker(
+                [23.3617099, 85.34153150000002],
+                {}
+            ).addTo(marker_cluster_b2ff2e342f1a331e37ffda45050c7511);
+        
+    
+            var icon_e8b0d73eaf0f100e49d03a13529567c5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_8cc3f78e13eaa2f92e80fc6988aa24e9.setIcon(icon_e8b0d73eaf0f100e49d03a13529567c5);
+        
+    
+        var popup_278925bf592439173863de026ed32fb8 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_564c34d67f9c40a19951efad9890370c = $(`<div id="html_564c34d67f9c40a19951efad9890370c" style="width: 100.0%; height: 100.0%;"><b>Ola Charging Station</b><br>EV Charging Station<br>986R+PH2 Bharat Petroleum, Old Hazaribagh Rd, Dhumsatoli, Kathartoli, Old Hazaribagh Rd, Dangartoli, Nayatoli, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJq7LNYQDh9DkR6x10eWz0gAA</div>`)[0];
+                popup_278925bf592439173863de026ed32fb8.setContent(html_564c34d67f9c40a19951efad9890370c);
+            
+        
+
+        marker_8cc3f78e13eaa2f92e80fc6988aa24e9.bindPopup(popup_278925bf592439173863de026ed32fb8)
+        ;
+
+        
+    
+    
+            marker_8cc3f78e13eaa2f92e80fc6988aa24e9.bindTooltip(
+                `<div>
+                     Ola Charging Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_be5d1f79975b73b82335483a2c7407e2 = L.marker(
+                [23.265146, 85.3047],
+                {}
+            ).addTo(marker_cluster_b2ff2e342f1a331e37ffda45050c7511);
+        
+    
+            var icon_528710a88299be1bb496c019a2f7bd8a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_be5d1f79975b73b82335483a2c7407e2.setIcon(icon_528710a88299be1bb496c019a2f7bd8a);
+        
+    
+        var popup_9402da9bf2786e1ee6db398d7c1fdfad = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_76e4fdf7ccf0a9e87a25ef096bd0d231 = $(`<div id="html_76e4fdf7ccf0a9e87a25ef096bd0d231" style="width: 100.0%; height: 100.0%;"><b>Ather Grid Charging Station</b><br>EV Charging Station<br>7883+3V4, River View Colony, Kumbatoli, Tupudana, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJf8ooIqgf9TkRcr-wSbhiJl8</div>`)[0];
+                popup_9402da9bf2786e1ee6db398d7c1fdfad.setContent(html_76e4fdf7ccf0a9e87a25ef096bd0d231);
+            
+        
+
+        marker_be5d1f79975b73b82335483a2c7407e2.bindPopup(popup_9402da9bf2786e1ee6db398d7c1fdfad)
+        ;
+
+        
+    
+    
+            marker_be5d1f79975b73b82335483a2c7407e2.bindTooltip(
+                `<div>
+                     Ather Grid Charging Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bcdf4eaa9dd0a070e55847b6c1691647 = L.marker(
+                [23.3733397, 85.35225700000001],
+                {}
+            ).addTo(marker_cluster_b2ff2e342f1a331e37ffda45050c7511);
+        
+    
+            var icon_6fadf81711c112b993cee62e1be527af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_bcdf4eaa9dd0a070e55847b6c1691647.setIcon(icon_6fadf81711c112b993cee62e1be527af);
+        
+    
+        var popup_d685a4540ae715b8d2a5d9f3ec6ef9ed = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_bf2b228f6c2e499423fcad7539b97918 = $(`<div id="html_bf2b228f6c2e499423fcad7539b97918" style="width: 100.0%; height: 100.0%;"><b>Ather Grid Charging Station</b><br>EV Charging Station<br>Jeep service centre, 51, K P, Kokar Industrial Area, Shanti Nagar, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJJ9_rvB_h9DkRzspCF0VKGpU</div>`)[0];
+                popup_d685a4540ae715b8d2a5d9f3ec6ef9ed.setContent(html_bf2b228f6c2e499423fcad7539b97918);
+            
+        
+
+        marker_bcdf4eaa9dd0a070e55847b6c1691647.bindPopup(popup_d685a4540ae715b8d2a5d9f3ec6ef9ed)
+        ;
+
+        
+    
+    
+            marker_bcdf4eaa9dd0a070e55847b6c1691647.bindTooltip(
+                `<div>
+                     Ather Grid Charging Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_efdde2f863a9aebfa660f0a17a6e8eaf = L.marker(
+                [23.3649564, 85.3107258],
+                {}
+            ).addTo(marker_cluster_b2ff2e342f1a331e37ffda45050c7511);
+        
+    
+            var icon_95d688d7dba562c13b8dd4a9bafde128 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_efdde2f863a9aebfa660f0a17a6e8eaf.setIcon(icon_95d688d7dba562c13b8dd4a9bafde128);
+        
+    
+        var popup_955be8b5bedc41b540d49ce547b72ad2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_367749c46d67f1889b6a66d8d2841b1f = $(`<div id="html_367749c46d67f1889b6a66d8d2841b1f" style="width: 100.0%; height: 100.0%;"><b>Ather Grid Charging Station</b><br>EV Charging Station<br>Plot no 591, City Mall, Harmu Rd, Kumhartoli, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJd5djpFjh9DkRZgjhrGj0aKM</div>`)[0];
+                popup_955be8b5bedc41b540d49ce547b72ad2.setContent(html_367749c46d67f1889b6a66d8d2841b1f);
+            
+        
+
+        marker_efdde2f863a9aebfa660f0a17a6e8eaf.bindPopup(popup_955be8b5bedc41b540d49ce547b72ad2)
+        ;
+
+        
+    
+    
+            marker_efdde2f863a9aebfa660f0a17a6e8eaf.bindTooltip(
+                `<div>
+                     Ather Grid Charging Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bfe211311df9630353249476bfe1050a = L.marker(
+                [23.2876377, 85.31348919999999],
+                {}
+            ).addTo(marker_cluster_b2ff2e342f1a331e37ffda45050c7511);
+        
+    
+            var icon_8af36dc1c698ab252b4ffd1d07da5d42 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_bfe211311df9630353249476bfe1050a.setIcon(icon_8af36dc1c698ab252b4ffd1d07da5d42);
+        
+    
+        var popup_ca3f146da872a65df050a73d74bbc37a = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_dca3b0206c76d6c833507872ab1e721c = $(`<div id="html_dca3b0206c76d6c833507872ab1e721c" style="width: 100.0%; height: 100.0%;"><b>Ather Grid Charging Station</b><br>EV Charging Station<br>be sure, sainik canteen, Oberia Rd, near nandan palace, Patel Nagar, Hatia, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJ0S3RVbUf9TkRBum4bpzUypA</div>`)[0];
+                popup_ca3f146da872a65df050a73d74bbc37a.setContent(html_dca3b0206c76d6c833507872ab1e721c);
+            
+        
+
+        marker_bfe211311df9630353249476bfe1050a.bindPopup(popup_ca3f146da872a65df050a73d74bbc37a)
+        ;
+
+        
+    
+    
+            marker_bfe211311df9630353249476bfe1050a.bindTooltip(
+                `<div>
+                     Ather Grid Charging Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_95446a6617fe640f702117f20771eec5 = L.marker(
+                [23.352965, 85.2336717],
+                {}
+            ).addTo(marker_cluster_b2ff2e342f1a331e37ffda45050c7511);
+        
+    
+            var icon_c7b237cd1dcab58013ef70087069a27f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_95446a6617fe640f702117f20771eec5.setIcon(icon_c7b237cd1dcab58013ef70087069a27f);
+        
+    
+        var popup_f9ad5a8a8901f8c666c879248295f07b = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c9e002e6b36335020ae5f9da2f3b8ccd = $(`<div id="html_c9e002e6b36335020ae5f9da2f3b8ccd" style="width: 100.0%; height: 100.0%;"><b>Quantum EV Charging Station</b><br>EV Charging Station<br>Quantum ARUN E MOTORS Heritage Nagar, Lalgutuwa, Itki Rd, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJQxILn0vf9DkRaLRKJAigblI</div>`)[0];
+                popup_f9ad5a8a8901f8c666c879248295f07b.setContent(html_c9e002e6b36335020ae5f9da2f3b8ccd);
+            
+        
+
+        marker_95446a6617fe640f702117f20771eec5.bindPopup(popup_f9ad5a8a8901f8c666c879248295f07b)
+        ;
+
+        
+    
+    
+            marker_95446a6617fe640f702117f20771eec5.bindTooltip(
+                `<div>
+                     Quantum EV Charging Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f270bb718663cf5942bcda6566031c5d = L.marker(
+                [23.3517539, 85.3243095],
+                {}
+            ).addTo(marker_cluster_b2ff2e342f1a331e37ffda45050c7511);
+        
+    
+            var icon_d6f650e34c0fca4a1f5c7540e83fde53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f270bb718663cf5942bcda6566031c5d.setIcon(icon_d6f650e34c0fca4a1f5c7540e83fde53);
+        
+    
+        var popup_490abac42daf406e114c5391b65adac2 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0ebbb17cba568e82fd5e304d874d77ed = $(`<div id="html_0ebbb17cba568e82fd5e304d874d77ed" style="width: 100.0%; height: 100.0%;"><b>ChargeZone Charging Station</b><br>EV Charging Station<br>Chakla, Ormanjhi, 33, National Highway, Hindpiri, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJU6fAG3Ph9DkRzwZHWP_vdUY</div>`)[0];
+                popup_490abac42daf406e114c5391b65adac2.setContent(html_0ebbb17cba568e82fd5e304d874d77ed);
+            
+        
+
+        marker_f270bb718663cf5942bcda6566031c5d.bindPopup(popup_490abac42daf406e114c5391b65adac2)
+        ;
+
+        
+    
+    
+            marker_f270bb718663cf5942bcda6566031c5d.bindTooltip(
+                `<div>
+                     ChargeZone Charging Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ec828559cd5f42ca014c7ca231030107 = L.marker(
+                [23.37196, 85.3313201],
+                {}
+            ).addTo(marker_cluster_b2ff2e342f1a331e37ffda45050c7511);
+        
+    
+            var icon_19dd5ebcfa0fb839db46f865f0438c99 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_ec828559cd5f42ca014c7ca231030107.setIcon(icon_19dd5ebcfa0fb839db46f865f0438c99);
+        
+    
+        var popup_ea7060952b1565b2cf48c36f11a468bc = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_0915abd2b04d7a6cbf81b324bbc3cd40 = $(`<div id="html_0915abd2b04d7a6cbf81b324bbc3cd40" style="width: 100.0%; height: 100.0%;"><b>Ather Grid Charging Station</b><br>EV Charging Station<br>2ND & 3RD FLOOR, DAMYANTIKA COMPLEX, East Jail Road, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJI4dohA3h9DkR8nEIeXe5gwQ</div>`)[0];
+                popup_ea7060952b1565b2cf48c36f11a468bc.setContent(html_0915abd2b04d7a6cbf81b324bbc3cd40);
+            
+        
+
+        marker_ec828559cd5f42ca014c7ca231030107.bindPopup(popup_ea7060952b1565b2cf48c36f11a468bc)
+        ;
+
+        
+    
+    
+            marker_ec828559cd5f42ca014c7ca231030107.bindTooltip(
+                `<div>
+                     Ather Grid Charging Station
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_821a415a986e30fc08d7729b802490a8 = L.marker(
+                [23.3500548, 85.3058649],
+                {}
+            ).addTo(marker_cluster_b2ff2e342f1a331e37ffda45050c7511);
+        
+    
+            var icon_28a7df1c8711e568dfea948126f6b25d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_821a415a986e30fc08d7729b802490a8.setIcon(icon_28a7df1c8711e568dfea948126f6b25d);
+        
+    
+        var popup_f3e552500aef5230ef6a8232d7a20340 = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_b228076cde8f77b8e9c8421742f9082b = $(`<div id="html_b228076cde8f77b8e9c8421742f9082b" style="width: 100.0%; height: 100.0%;"><b>Brinnam Energy</b><br>EV Charging Station<br>LGF Sai Arcade, Ashok Nagar Rd, Central Ashoka Colony, Harmu Housing Colony, Delatoli, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJqenPfm_h9DkRWvjgf_IeixA</div>`)[0];
+                popup_f3e552500aef5230ef6a8232d7a20340.setContent(html_b228076cde8f77b8e9c8421742f9082b);
+            
+        
+
+        marker_821a415a986e30fc08d7729b802490a8.bindPopup(popup_f3e552500aef5230ef6a8232d7a20340)
+        ;
+
+        
+    
+    
+            marker_821a415a986e30fc08d7729b802490a8.bindTooltip(
+                `<div>
+                     Brinnam Energy
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a5c99fee00150ffab95f12d2ec48d94e = L.marker(
+                [23.3758575, 85.3515247],
+                {}
+            ).addTo(marker_cluster_b2ff2e342f1a331e37ffda45050c7511);
+        
+    
+            var icon_4afc94e0f35a759a858f5657f6102e49 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_a5c99fee00150ffab95f12d2ec48d94e.setIcon(icon_4afc94e0f35a759a858f5657f6102e49);
+        
+    
+        var popup_97af20269eac6ca41e04a92ba0a9c03d = L.popup({"maxWidth": 300});
+
+        
+            
+                var html_c7b1afb2378d9b510c518640a97d9d5f = $(`<div id="html_c7b1afb2378d9b510c518640a97d9d5f" style="width: 100.0%; height: 100.0%;"><b>The Ranchi E-Wheels</b><br>EV Charging Station<br>Chanchal Complex, Sadhu Maidan, Old, Hazaribagh Rd, Kokar Industrial Area, Kokar, Ranchi<br>Status: OPERATIONAL<br>Place ID: ChIJYc2FT5Ph9DkRg8ih6NVXsUc</div>`)[0];
+                popup_97af20269eac6ca41e04a92ba0a9c03d.setContent(html_c7b1afb2378d9b510c518640a97d9d5f);
+            
+        
+
+        marker_a5c99fee00150ffab95f12d2ec48d94e.bindPopup(popup_97af20269eac6ca41e04a92ba0a9c03d)
+        ;
+
+        
+    
+    
+            marker_a5c99fee00150ffab95f12d2ec48d94e.bindTooltip(
+                `<div>
+                     The Ranchi E-Wheels
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            marker_cluster_b2ff2e342f1a331e37ffda45050c7511.addTo(map_8d987bb147a745c3e3f09b5b7bc32225);
+        
+    
+            var layer_control_6be5d7587c7a7d557ec1d2344cc376da_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_da2b3b3d7ff06b55503a5243210b1de9,
+                },
+                overlays :  {
+                    "Petrol Pumps" : marker_cluster_8b3dbd13ee2905bcf106e2c19ed1fdbb,
+                    "EV Charging Stations" : marker_cluster_b2ff2e342f1a331e37ffda45050c7511,
+                },
+            };
+            let layer_control_6be5d7587c7a7d557ec1d2344cc376da = L.control.layers(
+                layer_control_6be5d7587c7a7d557ec1d2344cc376da_layers.base_layers,
+                layer_control_6be5d7587c7a7d557ec1d2344cc376da_layers.overlays,
+                {"autoZIndex": true, "collapsed": false, "position": "topright"}
+            ).addTo(map_8d987bb147a745c3e3f09b5b7bc32225);
+
+        
+</script>
+</html>
