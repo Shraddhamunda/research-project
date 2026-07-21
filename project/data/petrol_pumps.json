@@ -103,8 +103,8 @@
     "place_id": "ChIJVzMykHXh9DkRT161CH3mZX8",
     "business_status": "OPERATIONAL",
     "types": "gas_station, point_of_interest, establishment",
-    "rating": NaN,
-    "user_ratings_total": NaN,
+    "rating": null,
+    "user_ratings_total": null,
     "queried_type": "gas_station"
   },
   {

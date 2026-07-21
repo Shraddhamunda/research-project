@@ -55,8 +55,8 @@
     "place_id": "ChIJ5-APveYf9TkRu0acQX_KV94",
     "business_status": "OPERATIONAL",
     "types": "point_of_interest, establishment",
-    "rating": NaN,
-    "user_ratings_total": NaN,
+    "rating": null,
+    "user_ratings_total": null,
     "queried_type": "electric_vehicle_charging_station"
   },
   {
@@ -103,8 +103,8 @@
     "place_id": "ChIJu4KZlnzh9DkRuaXSwtvS8g8",
     "business_status": "OPERATIONAL",
     "types": "point_of_interest, establishment",
-    "rating": NaN,
-    "user_ratings_total": NaN,
+    "rating": null,
+    "user_ratings_total": null,
     "queried_type": "electric_vehicle_charging_station"
   },
   {
@@ -127,15 +127,15 @@
     "place_id": "ChIJl5oLFUzg9DkRFjtEB8AfZCs",
     "business_status": "OPERATIONAL",
     "types": "point_of_interest, establishment",
-    "rating": NaN,
-    "user_ratings_total": NaN,
+    "rating": null,
+    "user_ratings_total": null,
     "queried_type": "electric_vehicle_charging_station"
   },
   {
     "name": "Ather Grid Charging Station",
     "latitude": 23.3585189,
     "longitude": 85.30865519999999,
-    "address": "Sahajanand Chowk, Plot No H-117, Harmu Housing Colony, P.S, Argora, Ranchi",
+    "address": "Sahajanulld Chowk, Plot No H-117, Harmu Housing Colony, P.S, Argora, Ranchi",
     "place_id": "ChIJkUIX4FXg9DkRhzelMrrJb0M",
     "business_status": "OPERATIONAL",
     "types": "point_of_interest, establishment",
@@ -171,7 +171,7 @@
     "name": "Ather Grid Charging Station",
     "latitude": 23.4126181,
     "longitude": 85.403089,
-    "address": "Jungli Restaurant, Nandshila, Hazaribagh Rd, near Jumar Bridge",
+    "address": "Jungli Restaurant, nulldshila, Hazaribagh Rd, near Jumar Bridge",
     "place_id": "ChIJHztMD4Dl9DkR-x3R0tUOX7k",
     "business_status": "OPERATIONAL",
     "types": "point_of_interest, establishment",
@@ -247,8 +247,8 @@
     "place_id": "ChIJf8ooIqgf9TkRcr-wSbhiJl8",
     "business_status": "OPERATIONAL",
     "types": "point_of_interest, establishment",
-    "rating": NaN,
-    "user_ratings_total": NaN,
+    "rating": null,
+    "user_ratings_total": null,
     "queried_type": "electric_vehicle_charging_station"
   },
   {
@@ -279,7 +279,7 @@
     "name": "Ather Grid Charging Station",
     "latitude": 23.2876377,
     "longitude": 85.31348919999999,
-    "address": "be sure, sainik canteen, Oberia Rd, near nandan palace, Patel Nagar, Hatia, Ranchi",
+    "address": "be sure, sainik canteen, Oberia Rd, near nulldan palace, Patel Nagar, Hatia, Ranchi",
     "place_id": "ChIJ0S3RVbUf9TkRBum4bpzUypA",
     "business_status": "OPERATIONAL",
     "types": "point_of_interest, establishment",
@@ -307,8 +307,8 @@
     "place_id": "ChIJU6fAG3Ph9DkRzwZHWP_vdUY",
     "business_status": "OPERATIONAL",
     "types": "point_of_interest, establishment",
-    "rating": NaN,
-    "user_ratings_total": NaN,
+    "rating": null,
+    "user_ratings_total": null,
     "queried_type": "electric_vehicle_charging_station"
   },
   {
@@ -331,8 +331,8 @@
     "place_id": "ChIJqenPfm_h9DkRWvjgf_IeixA",
     "business_status": "OPERATIONAL",
     "types": "point_of_interest, establishment",
-    "rating": NaN,
-    "user_ratings_total": NaN,
+    "rating": null,
+    "user_ratings_total": null,
     "queried_type": "electric_vehicle_charging_station"
   },
   {
